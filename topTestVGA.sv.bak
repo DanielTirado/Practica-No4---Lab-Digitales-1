@@ -1,0 +1,53 @@
+module topTestVGA (
+    input logic clk,
+    input logic nreset,
+    input logic [9:0] sw,
+    output logic hsync,
+    output logic vsync,
+    output logic [11:0] rgb_out
+);
+
+// Internal signals
+logic [10:0] sig_pixel_x, sig_pixel_y; // 11 bits for pixel counters
+logic [11:0] sig_rgb; // RGB Input
+logic black;
+logic reset;
+assign reset = ~nreset;
+
+// Declare vga driver component
+vga_ctrl_640x480_60Hz vga_ctrl_inst (reset, clk,sig_rgb,hsync, vsync, sig_pixel_x,sig_pixel_y,rgb_out,black);
+
+// Declare component to draw square
+draw_square draw1 (sig_pixel_x,sig_pixel_y,{sw[9:8],sw},sig_rgb);
+
+
+endmodule
+
+module top_tb();
+
+    logic CLK;
+    logic reset;
+    logic [9:0] sw;
+    logic hsync;
+    logic vsync;
+    logic [11:0] rgb_out;
+	 localparam CLK_PERIOD = 20ns;
+	 
+	 topTestVGA top0 (CLK,reset,sw,hsync,vsync,rgb_out);
+	
+	 initial begin
+	 CLK = 1'b1;
+	 reset = 1'b1;
+	 #(CLK_PERIOD);
+	 reset = 1'b0;
+	 #(CLK_PERIOD);
+	 reset = 1'b1;
+	 sw = 10'd46;
+	 #35ms;
+	 $stop;
+	 
+	 end
+	 
+	 always #(CLK_PERIOD / 2) CLK = ~CLK;
+
+endmodule

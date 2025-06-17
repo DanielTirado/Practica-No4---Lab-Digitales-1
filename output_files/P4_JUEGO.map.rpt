@@ -1,5 +1,5 @@
 Analysis & Synthesis report for P4_JUEGO
-Thu Jun 12 08:52:58 2025
+Mon Jun 16 18:05:24 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -10,7 +10,38 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |main
+ 12. Parameter Settings for User Entity Instance: cntdiv_n:cntDiv0
+ 13. Parameter Settings for User Entity Instance: vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0
+ 14. Parameter Settings for User Entity Instance: display:displayU
+ 15. Parameter Settings for User Entity Instance: display:displayD
+ 16. Parameter Settings for User Entity Instance: display:displayC
+ 17. Parameter Settings for User Entity Instance: display34segm:display34a
+ 18. Parameter Settings for User Entity Instance: display34segm:display34b
+ 19. Parameter Settings for User Entity Instance: display34segm:display34c
+ 20. Parameter Settings for User Entity Instance: display34segm:display34d
+ 21. Parameter Settings for User Entity Instance: display34segm:display34e
+ 22. Parameter Settings for User Entity Instance: display34segm:display34f
+ 23. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 24. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 25. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
+ 26. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
+ 27. Port Connectivity Checks: "display34segm:display34f"
+ 28. Port Connectivity Checks: "display34segm:display34e"
+ 29. Port Connectivity Checks: "display34segm:display34d"
+ 30. Port Connectivity Checks: "display34segm:display34c"
+ 31. Port Connectivity Checks: "display34segm:display34b"
+ 32. Port Connectivity Checks: "display34segm:display34a"
+ 33. Port Connectivity Checks: "vga_ctrl_640x480_60Hz:vga_ctrl_inst"
+ 34. Post-Synthesis Netlist Statistics for Top Partition
+ 35. Elapsed Time Per Partition
+ 36. Analysis & Synthesis Messages
 
 
 
@@ -37,22 +68,22 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Jun 12 08:52:58 2025              ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun 16 18:05:24 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; P4_JUEGO                                       ;
-; Top-level Entity Name              ; topTestVGA                                     ;
+; Top-level Entity Name              ; main                                           ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; N/A until Partition Merge                      ;
-;     Total combinational functions  ; N/A until Partition Merge                      ;
-;     Dedicated logic registers      ; N/A until Partition Merge                      ;
-; Total registers                    ; N/A until Partition Merge                      ;
-; Total pins                         ; N/A until Partition Merge                      ;
-; Total virtual pins                 ; N/A until Partition Merge                      ;
-; Total memory bits                  ; N/A until Partition Merge                      ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
-; Total PLLs                         ; N/A until Partition Merge                      ;
-; UFM blocks                         ; N/A until Partition Merge                      ;
-; ADC blocks                         ; N/A until Partition Merge                      ;
+; Total logic elements               ; 972                                            ;
+;     Total combinational functions  ; 965                                            ;
+;     Dedicated logic registers      ; 72                                             ;
+; Total registers                    ; 72                                             ;
+; Total pins                         ; 17                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
 +------------------------------------+------------------------------------------------+
 
 
@@ -62,7 +93,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
-; Top-level entity name                                            ; topTestVGA         ; P4_JUEGO           ;
+; Top-level entity name                                            ; main               ; P4_JUEGO           ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -151,11 +182,590 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+; cntdiv_n.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/cntdiv_n.sv                                 ;         ;
+; vga_ctrl_640x480_60Hz.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/vga_ctrl_640x480_60Hz.sv                    ;         ;
+; display.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/display.sv                                  ;         ;
+; display34segm.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/display34segm.sv                            ;         ;
+; main.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/main.sv                                     ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal231.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc      ;         ;
+; db/lpm_divide_lll.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/lpm_divide_lll.tdf                       ;         ;
+; db/sign_div_unsign_klh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/sign_div_unsign_klh.tdf                  ;         ;
+; db/alt_u_div_ihe.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/alt_u_div_ihe.tdf                        ;         ;
+; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/add_sub_t3c.tdf                          ;         ;
+; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/add_sub_u3c.tdf                          ;         ;
+; db/lpm_divide_itl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/lpm_divide_itl.tdf                       ;         ;
+; db/lpm_divide_ltl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/lpm_divide_ltl.tdf                       ;         ;
+; db/sign_div_unsign_nlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/sign_div_unsign_nlh.tdf                  ;         ;
+; db/alt_u_div_ohe.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/alt_u_div_ohe.tdf                        ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                   ;
++---------------------------------------------+-------------------------------------------------+
+; Resource                                    ; Usage                                           ;
++---------------------------------------------+-------------------------------------------------+
+; Estimated Total logic elements              ; 972                                             ;
+;                                             ;                                                 ;
+; Total combinational functions               ; 965                                             ;
+; Logic element usage by number of LUT inputs ;                                                 ;
+;     -- 4 input functions                    ; 259                                             ;
+;     -- 3 input functions                    ; 266                                             ;
+;     -- <=2 input functions                  ; 440                                             ;
+;                                             ;                                                 ;
+; Logic elements by mode                      ;                                                 ;
+;     -- normal mode                          ; 545                                             ;
+;     -- arithmetic mode                      ; 420                                             ;
+;                                             ;                                                 ;
+; Total registers                             ; 72                                              ;
+;     -- Dedicated logic registers            ; 72                                              ;
+;     -- I/O registers                        ; 0                                               ;
+;                                             ;                                                 ;
+; I/O pins                                    ; 17                                              ;
+;                                             ;                                                 ;
+; Embedded Multiplier 9-bit elements          ; 0                                               ;
+;                                             ;                                                 ;
+; Maximum fan-out node                        ; vga_ctrl_640x480_60Hz:vga_ctrl_inst|hcounter[6] ;
+; Maximum fan-out                             ; 49                                              ;
+; Total fan-out                               ; 2901                                            ;
+; Average fan-out                             ; 2.71                                            ;
++---------------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                          ;
++------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                   ; Entity Name           ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; |main                                    ; 965 (95)            ; 72 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 17   ; 0            ; 0          ; |main                                                                                                 ; main                  ; work         ;
+;    |cntdiv_n:cntDiv0|                    ; 46 (46)             ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|cntdiv_n:cntDiv0                                                                                ; cntdiv_n              ; work         ;
+;    |display34segm:display34a|            ; 23 (23)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|display34segm:display34a                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34b|            ; 108 (108)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|display34segm:display34b                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34c|            ; 125 (125)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|display34segm:display34c                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34d|            ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|display34segm:display34d                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34e|            ; 23 (23)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|display34segm:display34e                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34f|            ; 139 (139)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|display34segm:display34f                                                                        ; display34segm         ; work         ;
+;    |display:displayC|                    ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|display:displayC                                                                                ; display               ; work         ;
+;    |display:displayD|                    ; 29 (29)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|display:displayD                                                                                ; display               ; work         ;
+;    |display:displayU|                    ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|display:displayU                                                                                ; display               ; work         ;
+;    |lpm_divide:Div0|                     ; 82 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Div0                                                                                 ; lpm_divide            ; work         ;
+;       |lpm_divide_itl:auto_generated|    ; 82 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Div0|lpm_divide_itl:auto_generated                                                   ; lpm_divide_itl        ; work         ;
+;          |sign_div_unsign_klh:divider|   ; 82 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Div0|lpm_divide_itl:auto_generated|sign_div_unsign_klh:divider                       ; sign_div_unsign_klh   ; work         ;
+;             |alt_u_div_ihe:divider|      ; 82 (82)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Div0|lpm_divide_itl:auto_generated|sign_div_unsign_klh:divider|alt_u_div_ihe:divider ; alt_u_div_ihe         ; work         ;
+;    |lpm_divide:Div1|                     ; 69 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Div1                                                                                 ; lpm_divide            ; work         ;
+;       |lpm_divide_ltl:auto_generated|    ; 69 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Div1|lpm_divide_ltl:auto_generated                                                   ; lpm_divide_ltl        ; work         ;
+;          |sign_div_unsign_nlh:divider|   ; 69 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Div1|lpm_divide_ltl:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh   ; work         ;
+;             |alt_u_div_ohe:divider|      ; 69 (69)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Div1|lpm_divide_ltl:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_ohe:divider ; alt_u_div_ohe         ; work         ;
+;    |lpm_divide:Mod0|                     ; 85 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Mod0                                                                                 ; lpm_divide            ; work         ;
+;       |lpm_divide_lll:auto_generated|    ; 85 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Mod0|lpm_divide_lll:auto_generated                                                   ; lpm_divide_lll        ; work         ;
+;          |sign_div_unsign_klh:divider|   ; 85 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Mod0|lpm_divide_lll:auto_generated|sign_div_unsign_klh:divider                       ; sign_div_unsign_klh   ; work         ;
+;             |alt_u_div_ihe:divider|      ; 85 (85)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Mod0|lpm_divide_lll:auto_generated|sign_div_unsign_klh:divider|alt_u_div_ihe:divider ; alt_u_div_ihe         ; work         ;
+;    |lpm_divide:Mod1|                     ; 49 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Mod1                                                                                 ; lpm_divide            ; work         ;
+;       |lpm_divide_lll:auto_generated|    ; 49 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Mod1|lpm_divide_lll:auto_generated                                                   ; lpm_divide_lll        ; work         ;
+;          |sign_div_unsign_klh:divider|   ; 49 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Mod1|lpm_divide_lll:auto_generated|sign_div_unsign_klh:divider                       ; sign_div_unsign_klh   ; work         ;
+;             |alt_u_div_ihe:divider|      ; 49 (49)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|lpm_divide:Mod1|lpm_divide_lll:auto_generated|sign_div_unsign_klh:divider|alt_u_div_ihe:divider ; alt_u_div_ihe         ; work         ;
+;    |vga_ctrl_640x480_60Hz:vga_ctrl_inst| ; 60 (57)             ; 36 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|vga_ctrl_640x480_60Hz:vga_ctrl_inst                                                             ; vga_ctrl_640x480_60Hz ; work         ;
+;       |cntdiv_n:cntdiv_0|                ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0                                           ; cntdiv_n              ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                          ;
++----------------------------------------------------+----------------------------------------+
+; Register name                                      ; Reason for Removal                     ;
++----------------------------------------------------+----------------------------------------+
+; vga_ctrl_640x480_60Hz:vga_ctrl_inst|rgb_out[8..10] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 3              ;                                        ;
++----------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 72    ;
+; Number of registers using Synchronous Clear  ; 22    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 39    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 21    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |main|vga_ctrl_640x480_60Hz:vga_ctrl_inst|hcounter[4]  ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |main|vga_ctrl_640x480_60Hz:vga_ctrl_inst|vcounter[10] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |main ;
++----------------+----------+------------------------------------------+
+; Parameter Name ; Value    ; Type                                     ;
++----------------+----------+------------------------------------------+
+; FPGAFREQ       ; 50000000 ; Signed Integer                           ;
++----------------+----------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cntdiv_n:cntDiv0 ;
++----------------+----------+-----------------------------------+
+; Parameter Name ; Value    ; Type                              ;
++----------------+----------+-----------------------------------+
+; TOPVALUE       ; 50000000 ; Signed Integer                    ;
++----------------+----------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; TOPVALUE       ; 2     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:displayU ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; LW             ; 5     ; Signed Integer                       ;
+; DW             ; 20    ; Signed Integer                       ;
+; DL             ; 30    ; Signed Integer                       ;
+; POSX           ; 60    ; Signed Integer                       ;
+; POSY           ; 10    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:displayD ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; LW             ; 5     ; Signed Integer                       ;
+; DW             ; 20    ; Signed Integer                       ;
+; DL             ; 30    ; Signed Integer                       ;
+; POSX           ; 35    ; Signed Integer                       ;
+; POSY           ; 10    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:displayC ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; LW             ; 5     ; Signed Integer                       ;
+; DW             ; 20    ; Signed Integer                       ;
+; DL             ; 30    ; Signed Integer                       ;
+; POSX           ; 10    ; Signed Integer                       ;
+; POSY           ; 10    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display34segm:display34a ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; SG_WD          ; 5     ; Signed Integer                               ;
+; DL             ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display34segm:display34b ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; SG_WD          ; 5     ; Signed Integer                               ;
+; DL             ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display34segm:display34c ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; SG_WD          ; 5     ; Signed Integer                               ;
+; DL             ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display34segm:display34d ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; SG_WD          ; 5     ; Signed Integer                               ;
+; DL             ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display34segm:display34e ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; SG_WD          ; 5     ; Signed Integer                               ;
+; DL             ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display34segm:display34f ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; SG_WD          ; 5     ; Signed Integer                               ;
+; DL             ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 10             ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_lll ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 10             ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_itl ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 10             ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_lll ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div1 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 10             ; Untyped                ;
+; LPM_WIDTHD             ; 7              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_ltl ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display34segm:display34f"                                                                                                                                                                      ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port             ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; posx             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posx[7..5]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[10..8]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[4..1]       ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[0]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posy[10..4]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[3]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[2]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[1]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[0]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[27..24] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[22..21] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[19..15] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[33..28] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[14..9]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[7..0]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[23]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[20]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[8]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display34segm:display34e"                                                                                                                                                                      ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port             ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; posx             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posx[7..6]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[10..8]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[5..4]       ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[2..0]       ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[3]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posy[10..4]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[3]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[2]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[1]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[0]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[33..30] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[27..24] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[19..16] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[29..28] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[23..20] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[15..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display34segm:display34d"                                                                                                                                                                      ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port             ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; posx             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posx[3..0]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[10..8]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[7]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[6]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[5]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[4]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posy[10..4]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[3]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[2]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[1]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[0]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[33..32] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[29..28] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[23..20] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[31..30] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[27..24] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[19..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display34segm:display34c"                                                                                                                                                                      ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port             ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; posx             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posx[2..1]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[10..8]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[6..5]       ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[7]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[4]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[3]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[0]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posy[10..4]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[3]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[2]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[1]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[0]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[33..30] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[27..24] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[19..18] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[29..28] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[23..20] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[17..12] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[10..9]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[7..0]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[11]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[8]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display34segm:display34b"                                                                                                                                                                      ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port             ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; posx             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posx[6..2]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[10..7]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[1]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[0]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posy[10..4]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[3]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[2]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[1]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[0]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[27..24] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[18..17] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[32..30] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[23..19] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[16..15] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[13..1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[33]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[29]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[28]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[14]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[0]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display34segm:display34a"                                                                                                                                                                      ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port             ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; posx             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posx[6..5]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[10..7]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[4..3]       ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[1..0]       ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[2]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posy[10..4]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[3]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[2]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[1]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[0]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[33..30] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[27..24] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[19..16] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[29..28] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[23..20] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[15..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vga_ctrl_640x480_60Hz:vga_ctrl_inst"                                                         ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; rgb_in[10..8] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; blank         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 17                          ;
+; cycloneiii_ff         ; 72                          ;
+;     CLR               ; 29                          ;
+;     ENA CLR           ; 10                          ;
+;     ENA SCLR          ; 11                          ;
+;     SCLR              ; 11                          ;
+;     plain             ; 11                          ;
+; cycloneiii_lcell_comb ; 966                         ;
+;     arith             ; 420                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 218                         ;
+;         3 data inputs ; 201                         ;
+;     normal            ; 546                         ;
+;         0 data inputs ; 23                          ;
+;         1 data inputs ; 22                          ;
+;         2 data inputs ; 177                         ;
+;         3 data inputs ; 65                          ;
+;         4 data inputs ; 259                         ;
+;                       ;                             ;
+; Max LUT depth         ; 23.70                       ;
+; Average LUT depth     ; 12.02                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -164,7 +774,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Jun 12 08:52:51 2025
+    Info: Processing started: Mon Jun 16 18:05:14 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P4_JUEGO -c P4_JUEGO
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -178,26 +788,80 @@ Info (12021): Found 1 design units, including 1 entities, in source file toptest
     Info (12023): Found entity 1: topTestVGA File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_ctrl_640x480_60hz.sv
     Info (12023): Found entity 1: vga_ctrl_640x480_60Hz File: C:/Users/danie/Documents/P4_JUEGO/vga_ctrl_640x480_60Hz.sv Line: 1
-Info (12127): Elaborating entity "topTestVGA" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(56): truncated value with size 32 to match size of target (11) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 56
-Error (10028): Can't resolve multiple constant drivers for net "pos_bul_x[10]" at topTestVGA.sv(65) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 65
-Error (10029): Constant driver at topTestVGA.sv(45) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 45
-Error (10028): Can't resolve multiple constant drivers for net "pos_bul_x[9]" at topTestVGA.sv(65) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 65
-Error (10028): Can't resolve multiple constant drivers for net "pos_bul_x[8]" at topTestVGA.sv(65) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 65
-Error (10028): Can't resolve multiple constant drivers for net "pos_bul_x[7]" at topTestVGA.sv(65) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 65
-Error (10028): Can't resolve multiple constant drivers for net "pos_bul_x[6]" at topTestVGA.sv(65) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 65
-Error (10028): Can't resolve multiple constant drivers for net "pos_bul_x[5]" at topTestVGA.sv(65) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 65
-Error (10028): Can't resolve multiple constant drivers for net "pos_bul_x[4]" at topTestVGA.sv(65) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 65
-Error (10028): Can't resolve multiple constant drivers for net "pos_bul_x[3]" at topTestVGA.sv(65) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 65
-Error (10028): Can't resolve multiple constant drivers for net "pos_bul_x[2]" at topTestVGA.sv(65) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 65
-Error (10028): Can't resolve multiple constant drivers for net "pos_bul_x[1]" at topTestVGA.sv(65) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 65
-Error (10028): Can't resolve multiple constant drivers for net "pos_bul_x[0]" at topTestVGA.sv(65) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 65
-Error (10028): Can't resolve multiple constant drivers for net "bullet_active" at topTestVGA.sv(65) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 65
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 14 errors, 2 warnings
-    Error: Peak virtual memory: 4718 megabytes
-    Error: Processing ended: Thu Jun 12 08:52:58 2025
-    Error: Elapsed time: 00:00:07
-    Error: Total CPU time (on all processors): 00:00:17
+Info (12021): Found 1 design units, including 1 entities, in source file display.sv
+    Info (12023): Found entity 1: display File: C:/Users/danie/Documents/P4_JUEGO/display.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file display34segm.sv
+    Info (12023): Found entity 1: display34segm File: C:/Users/danie/Documents/P4_JUEGO/display34segm.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file main.sv
+    Info (12023): Found entity 1: main File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 1
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Info (12128): Elaborating entity "cntdiv_n" for hierarchy "cntdiv_n:cntDiv0" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 34
+Info (12128): Elaborating entity "vga_ctrl_640x480_60Hz" for hierarchy "vga_ctrl_640x480_60Hz:vga_ctrl_inst" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 36
+Info (12128): Elaborating entity "cntdiv_n" for hierarchy "vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0" File: C:/Users/danie/Documents/P4_JUEGO/vga_ctrl_640x480_60Hz.sv Line: 41
+Info (12128): Elaborating entity "display" for hierarchy "display:displayU" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 38
+Info (12128): Elaborating entity "display" for hierarchy "display:displayD" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 39
+Info (12128): Elaborating entity "display" for hierarchy "display:displayC" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 40
+Info (12128): Elaborating entity "display34segm" for hierarchy "display34segm:display34a" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 42
+Info (278001): Inferred 4 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 91
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 92
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 92
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 93
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 91
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 91
+    Info (12134): Parameter "LPM_WIDTHN" = "10"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_lll.tdf
+    Info (12023): Found entity 1: lpm_divide_lll File: C:/Users/danie/Documents/P4_JUEGO/db/lpm_divide_lll.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_klh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_klh File: C:/Users/danie/Documents/P4_JUEGO/db/sign_div_unsign_klh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ihe.tdf
+    Info (12023): Found entity 1: alt_u_div_ihe File: C:/Users/danie/Documents/P4_JUEGO/db/alt_u_div_ihe.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
+    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/danie/Documents/P4_JUEGO/db/add_sub_t3c.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
+    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/danie/Documents/P4_JUEGO/db/add_sub_u3c.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 92
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 92
+    Info (12134): Parameter "LPM_WIDTHN" = "10"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_itl.tdf
+    Info (12023): Found entity 1: lpm_divide_itl File: C:/Users/danie/Documents/P4_JUEGO/db/lpm_divide_itl.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 93
+Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 93
+    Info (12134): Parameter "LPM_WIDTHN" = "10"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ltl.tdf
+    Info (12023): Found entity 1: lpm_divide_ltl File: C:/Users/danie/Documents/P4_JUEGO/db/lpm_divide_ltl.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_nlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_nlh File: C:/Users/danie/Documents/P4_JUEGO/db/sign_div_unsign_nlh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ohe.tdf
+    Info (12023): Found entity 1: alt_u_div_ohe File: C:/Users/danie/Documents/P4_JUEGO/db/alt_u_div_ohe.tdf Line: 27
+Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "rgb_out[8]" is stuck at GND File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 7
+    Warning (13410): Pin "rgb_out[9]" is stuck at GND File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 7
+    Warning (13410): Pin "rgb_out[10]" is stuck at GND File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 7
+Info (286030): Timing-Driven Synthesis is running
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_lll:auto_generated|sign_div_unsign_klh:divider|alt_u_div_ihe:divider|add_sub_6_result_int[0]~10" File: C:/Users/danie/Documents/P4_JUEGO/db/alt_u_div_ihe.tdf Line: 57
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_lll:auto_generated|sign_div_unsign_klh:divider|alt_u_div_ihe:divider|add_sub_8_result_int[0]~10" File: C:/Users/danie/Documents/P4_JUEGO/db/alt_u_div_ihe.tdf Line: 67
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 991 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 974 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Mon Jun 16 18:05:24 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:20
 
 

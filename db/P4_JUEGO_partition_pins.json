@@ -44,155 +44,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "rgb_out[8]",
-					"strict" : false
-				},
-				{
-					"name" : "rgb_out[9]",
-					"strict" : false
-				},
-				{
-					"name" : "rgb_out[10]",
-					"strict" : false
-				},
-				{
 					"name" : "rgb_out[11]",
 					"strict" : false
 				},
 				{
-					"name" : "FILAS[0]",
+					"name" : "nRST",
 					"strict" : false
 				},
 				{
-					"name" : "FILAS[1]",
+					"name" : "CLK",
 					"strict" : false
 				},
 				{
-					"name" : "FILAS[2]",
-					"strict" : false
-				},
-				{
-					"name" : "FILAS[3]",
-					"strict" : false
-				},
-				{
-					"name" : "TECLA[0]",
-					"strict" : false
-				},
-				{
-					"name" : "TECLA[1]",
-					"strict" : false
-				},
-				{
-					"name" : "TECLA[2]",
-					"strict" : false
-				},
-				{
-					"name" : "TECLA[3]",
-					"strict" : false
-				},
-				{
-					"name" : "FLAG",
-					"strict" : false
-				},
-				{
-					"name" : "DISP[0]",
-					"strict" : false
-				},
-				{
-					"name" : "DISP[1]",
-					"strict" : false
-				},
-				{
-					"name" : "DISP[2]",
-					"strict" : false
-				},
-				{
-					"name" : "DISP[3]",
-					"strict" : false
-				},
-				{
-					"name" : "DISP[4]",
-					"strict" : false
-				},
-				{
-					"name" : "DISP[5]",
-					"strict" : false
-				},
-				{
-					"name" : "DISP[6]",
-					"strict" : false
-				},
-				{
-					"name" : "DISP[7]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[0]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[1]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[2]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[3]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[4]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[5]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[6]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[7]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[8]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[9]",
-					"strict" : false
-				},
-				{
-					"name" : "nreset_key",
-					"strict" : false
-				},
-				{
-					"name" : "nreset_tv",
-					"strict" : false
-				},
-				{
-					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "COLUMNAS[1]",
-					"strict" : false
-				},
-				{
-					"name" : "COLUMNAS[3]",
-					"strict" : false
-				},
-				{
-					"name" : "COLUMNAS[0]",
-					"strict" : false
-				},
-				{
-					"name" : "COLUMNAS[2]",
+					"name" : "nPBTON",
 					"strict" : false
 				}
 			]

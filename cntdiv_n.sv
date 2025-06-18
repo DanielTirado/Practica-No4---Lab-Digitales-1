@@ -1,4 +1,4 @@
-module cntdiv_n #(TOPVALUE = 10_000) (clk, rst, clkout);
+module cntdiv_n #(TOPVALUE = 100_000) (clk, rst, clkout);
 	input logic clk, rst;
 	output logic clkout;
 	

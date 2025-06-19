@@ -3,56 +3,60 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'cntdiv_n:clk_divisor|clkout'
-Slack : -6.902
-TNS   : -215.018
+Slack : -7.595
+TNS   : -446.563
 
 Type  : Slow 1200mV 85C Model Setup 'vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0|clkout'
-Slack : -5.011
-TNS   : -109.972
+Slack : -5.492
+TNS   : -133.993
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -3.947
-TNS   : -109.646
-
-Type  : Slow 1200mV 85C Model Setup 'Driver_Teclado:teclado1|b'
-Slack : -1.031
-TNS   : -6.450
+Slack : -3.986
+TNS   : -108.645
 
 Type  : Slow 1200mV 85C Model Setup 'Driver_Teclado:teclado1|clkout2'
-Slack : -0.763
-TNS   : -5.519
+Slack : -1.103
+TNS   : -7.600
+
+Type  : Slow 1200mV 85C Model Setup 'Driver_Teclado:teclado1|b'
+Slack : -0.630
+TNS   : -3.854
 
 Type  : Slow 1200mV 85C Model Setup 'Driver_Teclado:teclado1|clkout'
-Slack : -0.321
-TNS   : -0.454
+Slack : -0.368
+TNS   : -1.310
 
-Type  : Slow 1200mV 85C Model Hold 'Driver_Teclado:teclado1|clkout'
-Slack : 0.341
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.339
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'cntdiv_n:clk_divisor|clkout'
-Slack : 0.341
+Slack : 0.340
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'clk'
+Type  : Slow 1200mV 85C Model Hold 'Driver_Teclado:teclado1|clkout'
 Slack : 0.347
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'Driver_Teclado:teclado1|clkout2'
-Slack : 0.433
+Type  : Slow 1200mV 85C Model Hold 'vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0|clkout'
+Slack : 0.419
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0|clkout'
-Slack : 0.436
+Type  : Slow 1200mV 85C Model Hold 'Driver_Teclado:teclado1|clkout2'
+Slack : 0.434
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Driver_Teclado:teclado1|b'
-Slack : 0.929
+Slack : 0.526
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -77.359
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cntdiv_n:clk_divisor|clkout'
+Slack : -1.403
+TNS   : -91.195
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Driver_Teclado:teclado1|clkout2'
 Slack : -1.403
@@ -61,10 +65,6 @@ TNS   : -51.911
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0|clkout'
 Slack : -1.403
 TNS   : -50.508
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cntdiv_n:clk_divisor|clkout'
-Slack : -1.403
-TNS   : -46.299
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Driver_Teclado:teclado1|b'
 Slack : -1.403
@@ -75,56 +75,60 @@ Slack : -1.403
 TNS   : -8.418
 
 Type  : Slow 1200mV 0C Model Setup 'cntdiv_n:clk_divisor|clkout'
-Slack : -6.269
-TNS   : -196.417
+Slack : -6.983
+TNS   : -410.713
 
 Type  : Slow 1200mV 0C Model Setup 'vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0|clkout'
-Slack : -4.421
-TNS   : -97.900
+Slack : -4.934
+TNS   : -119.336
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -3.585
-TNS   : -96.621
-
-Type  : Slow 1200mV 0C Model Setup 'Driver_Teclado:teclado1|b'
-Slack : -0.874
-TNS   : -5.455
+Slack : -3.568
+TNS   : -95.864
 
 Type  : Slow 1200mV 0C Model Setup 'Driver_Teclado:teclado1|clkout2'
-Slack : -0.597
-TNS   : -3.646
+Slack : -0.962
+TNS   : -5.509
+
+Type  : Slow 1200mV 0C Model Setup 'Driver_Teclado:teclado1|b'
+Slack : -0.528
+TNS   : -2.923
 
 Type  : Slow 1200mV 0C Model Setup 'Driver_Teclado:teclado1|clkout'
-Slack : -0.204
-TNS   : -0.204
+Slack : -0.251
+TNS   : -0.763
 
-Type  : Slow 1200mV 0C Model Hold 'Driver_Teclado:teclado1|clkout'
-Slack : 0.306
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.305
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'cntdiv_n:clk_divisor|clkout'
-Slack : 0.306
+Slack : 0.305
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'clk'
+Type  : Slow 1200mV 0C Model Hold 'Driver_Teclado:teclado1|clkout'
 Slack : 0.311
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'Driver_Teclado:teclado1|clkout2'
-Slack : 0.398
+Type  : Slow 1200mV 0C Model Hold 'vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0|clkout'
+Slack : 0.386
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0|clkout'
-Slack : 0.402
+Type  : Slow 1200mV 0C Model Hold 'Driver_Teclado:teclado1|clkout2'
+Slack : 0.397
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Driver_Teclado:teclado1|b'
-Slack : 0.791
+Slack : 0.475
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -77.359
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cntdiv_n:clk_divisor|clkout'
+Slack : -1.403
+TNS   : -91.195
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Driver_Teclado:teclado1|clkout2'
 Slack : -1.403
@@ -133,10 +137,6 @@ TNS   : -51.911
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0|clkout'
 Slack : -1.403
 TNS   : -50.508
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cntdiv_n:clk_divisor|clkout'
-Slack : -1.403
-TNS   : -46.299
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Driver_Teclado:teclado1|b'
 Slack : -1.403
@@ -147,38 +147,38 @@ Slack : -1.403
 TNS   : -8.418
 
 Type  : Fast 1200mV 0C Model Setup 'cntdiv_n:clk_divisor|clkout'
-Slack : -2.408
-TNS   : -74.992
+Slack : -2.679
+TNS   : -154.526
 
 Type  : Fast 1200mV 0C Model Setup 'vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0|clkout'
-Slack : -1.451
-TNS   : -25.237
+Slack : -1.702
+TNS   : -36.163
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -1.213
-TNS   : -17.929
-
-Type  : Fast 1200mV 0C Model Setup 'Driver_Teclado:teclado1|b'
-Slack : -0.058
-TNS   : -0.058
+Slack : -1.347
+TNS   : -17.450
 
 Type  : Fast 1200mV 0C Model Setup 'Driver_Teclado:teclado1|clkout2'
-Slack : 0.246
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Driver_Teclado:teclado1|b'
+Slack : 0.224
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'Driver_Teclado:teclado1|clkout'
-Slack : 0.424
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'Driver_Teclado:teclado1|clkout'
-Slack : 0.147
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'cntdiv_n:clk_divisor|clkout'
-Slack : 0.148
+Slack : 0.407
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cntdiv_n:clk_divisor|clkout'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Driver_Teclado:teclado1|clkout'
 Slack : 0.152
 TNS   : 0.000
 
@@ -187,16 +187,20 @@ Slack : 0.162
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0|clkout'
-Slack : 0.174
+Slack : 0.166
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Driver_Teclado:teclado1|b'
-Slack : 0.353
+Slack : 0.178
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -57.814
+TNS   : -57.774
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cntdiv_n:clk_divisor|clkout'
+Slack : -1.000
+TNS   : -65.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Driver_Teclado:teclado1|clkout2'
 Slack : -1.000
@@ -205,10 +209,6 @@ TNS   : -37.000
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0|clkout'
 Slack : -1.000
 TNS   : -36.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cntdiv_n:clk_divisor|clkout'
-Slack : -1.000
-TNS   : -33.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Driver_Teclado:teclado1|b'
 Slack : -1.000

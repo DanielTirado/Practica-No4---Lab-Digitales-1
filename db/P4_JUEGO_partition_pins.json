@@ -128,46 +128,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "sw[0]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[1]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[2]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[3]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[4]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[5]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[6]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[7]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[8]",
-					"strict" : false
-				},
-				{
-					"name" : "sw[9]",
-					"strict" : false
-				},
-				{
 					"name" : "nreset_key",
 					"strict" : false
 				},
@@ -188,11 +148,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "COLUMNAS[3]",
+					"name" : "COLUMNAS[1]",
 					"strict" : false
 				},
 				{
-					"name" : "COLUMNAS[1]",
+					"name" : "COLUMNAS[3]",
 					"strict" : false
 				}
 			]

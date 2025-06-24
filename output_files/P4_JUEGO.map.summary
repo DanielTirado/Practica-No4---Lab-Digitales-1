@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Thu Jun 19 08:04:31 2025
+Analysis & Synthesis Status : Successful - Tue Jun 24 16:22:06 2025
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : P4_JUEGO
 Top-level Entity Name : topTestVGA
 Family : MAX 10
-Total logic elements : 614
-    Total combinational functions : 572
-    Dedicated logic registers : 205
-Total registers : 205
+Total logic elements : 1,817
+    Total combinational functions : 1,772
+    Dedicated logic registers : 221
+Total registers : 221
 Total pins : 48
 Total virtual pins : 0
 Total memory bits : 0

@@ -1,14 +1,14 @@
-Fitter Status : Successful - Thu Jun 19 08:04:41 2025
+Fitter Status : Successful - Tue Jun 24 16:22:21 2025
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : P4_JUEGO
 Top-level Entity Name : topTestVGA
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 612 / 49,760 ( 1 % )
-    Total combinational functions : 572 / 49,760 ( 1 % )
-    Dedicated logic registers : 205 / 49,760 ( < 1 % )
-Total registers : 205
+Total logic elements : 1,819 / 49,760 ( 4 % )
+    Total combinational functions : 1,772 / 49,760 ( 4 % )
+    Dedicated logic registers : 221 / 49,760 ( < 1 % )
+Total registers : 221
 Total pins : 48 / 360 ( 13 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )

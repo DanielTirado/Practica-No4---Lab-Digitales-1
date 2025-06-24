@@ -140,6 +140,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "COLUMNAS[3]",
+					"strict" : false
+				},
+				{
 					"name" : "COLUMNAS[0]",
 					"strict" : false
 				},
@@ -149,10 +153,6 @@
 				},
 				{
 					"name" : "COLUMNAS[1]",
-					"strict" : false
-				},
-				{
-					"name" : "COLUMNAS[3]",
 					"strict" : false
 				}
 			]

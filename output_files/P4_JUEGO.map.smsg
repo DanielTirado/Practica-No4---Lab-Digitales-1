@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at topTestVGA.sv(151): always construct contains both blocking and non-blocking assignments File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 151
+Warning (10268): Verilog HDL information at topTestVGA.sv(130): always construct contains both blocking and non-blocking assignments File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 130

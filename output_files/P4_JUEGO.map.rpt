@@ -1,5 +1,5 @@
 Analysis & Synthesis report for P4_JUEGO
-Tue Jun 24 16:22:06 2025
+Thu Jun 26 16:55:37 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -31,41 +31,44 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
  23. Parameter Settings for User Entity Instance: display34segm:display34l
  24. Parameter Settings for User Entity Instance: display:displayU2
  25. Parameter Settings for User Entity Instance: display:displayD2
- 26. Parameter Settings for User Entity Instance: display34segm:display34a
- 27. Parameter Settings for User Entity Instance: display34segm:display34b
- 28. Parameter Settings for User Entity Instance: display34segm:display34c
- 29. Parameter Settings for User Entity Instance: display34segm:display34d
- 30. Parameter Settings for User Entity Instance: display34segm:display34e
- 31. Parameter Settings for User Entity Instance: display34segm:display34f
- 32. Parameter Settings for User Entity Instance: cntdiv_n:clk_divisor
- 33. Parameter Settings for User Entity Instance: Driver_Teclado:teclado1
- 34. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
- 35. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
- 36. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
- 37. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
- 38. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
- 39. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
- 40. Port Connectivity Checks: "draw_square:wall2_draw"
- 41. Port Connectivity Checks: "draw_square:wall1_draw"
- 42. Port Connectivity Checks: "draw_square:player2_draw"
- 43. Port Connectivity Checks: "draw_square:player1_draw"
- 44. Port Connectivity Checks: "display34segm:display34f"
- 45. Port Connectivity Checks: "display34segm:display34e"
- 46. Port Connectivity Checks: "display34segm:display34d"
- 47. Port Connectivity Checks: "display34segm:display34c"
- 48. Port Connectivity Checks: "display34segm:display34b"
- 49. Port Connectivity Checks: "display34segm:display34a"
- 50. Port Connectivity Checks: "display34segm:display34l"
- 51. Port Connectivity Checks: "display34segm:display34k"
- 52. Port Connectivity Checks: "display34segm:display34j"
- 53. Port Connectivity Checks: "display34segm:display34i"
- 54. Port Connectivity Checks: "display34segm:display34h"
- 55. Port Connectivity Checks: "display34segm:display34g"
- 56. Port Connectivity Checks: "cntdiv_n:cntDiv0"
- 57. Port Connectivity Checks: "vga_ctrl_640x480_60Hz:vga_ctrl_inst"
- 58. Post-Synthesis Netlist Statistics for Top Partition
- 59. Elapsed Time Per Partition
- 60. Analysis & Synthesis Messages
+ 26. Parameter Settings for User Entity Instance: display34segm:displayLV_L
+ 27. Parameter Settings for User Entity Instance: display34segm:displayLV_V
+ 28. Parameter Settings for User Entity Instance: display:displayLevelNumber
+ 29. Parameter Settings for User Entity Instance: display34segm:display34a
+ 30. Parameter Settings for User Entity Instance: display34segm:display34b
+ 31. Parameter Settings for User Entity Instance: display34segm:display34c
+ 32. Parameter Settings for User Entity Instance: display34segm:display34d
+ 33. Parameter Settings for User Entity Instance: display34segm:display34e
+ 34. Parameter Settings for User Entity Instance: display34segm:display34f
+ 35. Parameter Settings for User Entity Instance: cntdiv_n:clk_divisor
+ 36. Parameter Settings for User Entity Instance: Driver_Teclado:teclado1
+ 37. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
+ 38. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
+ 39. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
+ 40. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 41. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 42. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
+ 43. Port Connectivity Checks: "draw_square:wall2_draw"
+ 44. Port Connectivity Checks: "draw_square:wall1_draw"
+ 45. Port Connectivity Checks: "display34segm:display34f"
+ 46. Port Connectivity Checks: "display34segm:display34e"
+ 47. Port Connectivity Checks: "display34segm:display34d"
+ 48. Port Connectivity Checks: "display34segm:display34c"
+ 49. Port Connectivity Checks: "display34segm:display34b"
+ 50. Port Connectivity Checks: "display34segm:display34a"
+ 51. Port Connectivity Checks: "display34segm:displayLV_V"
+ 52. Port Connectivity Checks: "display34segm:displayLV_L"
+ 53. Port Connectivity Checks: "display34segm:display34l"
+ 54. Port Connectivity Checks: "display34segm:display34k"
+ 55. Port Connectivity Checks: "display34segm:display34j"
+ 56. Port Connectivity Checks: "display34segm:display34i"
+ 57. Port Connectivity Checks: "display34segm:display34h"
+ 58. Port Connectivity Checks: "display34segm:display34g"
+ 59. Port Connectivity Checks: "cntdiv_n:cntDiv0"
+ 60. Port Connectivity Checks: "vga_ctrl_640x480_60Hz:vga_ctrl_inst"
+ 61. Post-Synthesis Netlist Statistics for Top Partition
+ 62. Elapsed Time Per Partition
+ 63. Analysis & Synthesis Messages
 
 
 
@@ -92,15 +95,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun 24 16:22:06 2025          ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 26 16:55:37 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; P4_JUEGO                                       ;
 ; Top-level Entity Name              ; topTestVGA                                     ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 1,817                                          ;
-;     Total combinational functions  ; 1,772                                          ;
-;     Dedicated logic registers      ; 221                                            ;
-; Total registers                    ; 221                                            ;
+; Total logic elements               ; 2,053                                          ;
+;     Total combinational functions  ; 2,007                                          ;
+;     Dedicated logic registers      ; 229                                            ;
+; Total registers                    ; 229                                            ;
 ; Total pins                         ; 48                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
@@ -211,7 +214,7 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.0%      ;
+;     Processor 3            ;   0.1%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -246,20 +249,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------+
 ; Resource                                    ; Usage                       ;
 +---------------------------------------------+-----------------------------+
-; Estimated Total logic elements              ; 1,817                       ;
+; Estimated Total logic elements              ; 2,053                       ;
 ;                                             ;                             ;
-; Total combinational functions               ; 1772                        ;
+; Total combinational functions               ; 2007                        ;
 ; Logic element usage by number of LUT inputs ;                             ;
-;     -- 4 input functions                    ; 422                         ;
-;     -- 3 input functions                    ; 582                         ;
-;     -- <=2 input functions                  ; 768                         ;
+;     -- 4 input functions                    ; 474                         ;
+;     -- 3 input functions                    ; 634                         ;
+;     -- <=2 input functions                  ; 899                         ;
 ;                                             ;                             ;
 ; Logic elements by mode                      ;                             ;
-;     -- normal mode                          ; 821                         ;
-;     -- arithmetic mode                      ; 951                         ;
+;     -- normal mode                          ; 908                         ;
+;     -- arithmetic mode                      ; 1099                        ;
 ;                                             ;                             ;
-; Total registers                             ; 221                         ;
-;     -- Dedicated logic registers            ; 221                         ;
+; Total registers                             ; 229                         ;
+;     -- Dedicated logic registers            ; 229                         ;
 ;     -- I/O registers                        ; 0                           ;
 ;                                             ;                             ;
 ; I/O pins                                    ; 48                          ;
@@ -267,8 +270,8 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0                           ;
 ;                                             ;                             ;
 ; Maximum fan-out node                        ; cntdiv_n:clk_divisor|clkout ;
-; Maximum fan-out                             ; 82                          ;
-; Total fan-out                               ; 5614                        ;
+; Maximum fan-out                             ; 90                          ;
+; Total fan-out                               ; 6270                        ;
 ; Average fan-out                             ; 2.69                        ;
 +---------------------------------------------+-----------------------------+
 
@@ -278,31 +281,34 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                         ; Entity Name           ; Library Name ;
 +------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |topTestVGA                              ; 1772 (511)          ; 221 (81)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 48   ; 0            ; 0          ; |topTestVGA                                                                                                 ; topTestVGA            ; work         ;
+; |topTestVGA                              ; 2007 (632)          ; 229 (89)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 48   ; 0            ; 0          ; |topTestVGA                                                                                                 ; topTestVGA            ; work         ;
 ;    |Driver_Teclado:teclado1|             ; 114 (114)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|Driver_Teclado:teclado1                                                                         ; Driver_Teclado        ; work         ;
 ;    |cntdiv_n:clk_divisor|                ; 28 (28)             ; 17 (17)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|cntdiv_n:clk_divisor                                                                            ; cntdiv_n              ; work         ;
-;    |display34segm:display34a|            ; 119 (119)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34a                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34b|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34b                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34c|            ; 125 (125)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34c                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34d|            ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34d                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34a|            ; 86 (86)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34a                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34b|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34b                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34c|            ; 127 (127)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34c                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34d|            ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34d                                                                        ; display34segm         ; work         ;
 ;    |display34segm:display34e|            ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34e                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34f|            ; 29 (29)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34f                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34g|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34g                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34h|            ; 77 (77)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34h                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34i|            ; 108 (108)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34i                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34f|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34f                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34g|            ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34g                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34h|            ; 78 (78)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34h                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34i|            ; 109 (109)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34i                                                                        ; display34segm         ; work         ;
 ;    |display34segm:display34j|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34j                                                                        ; display34segm         ; work         ;
 ;    |display34segm:display34k|            ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34k                                                                        ; display34segm         ; work         ;
 ;    |display34segm:display34l|            ; 87 (87)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34l                                                                        ; display34segm         ; work         ;
-;    |display:displayD2|                   ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayD2                                                                               ; display               ; work         ;
-;    |display:displayD|                    ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayD                                                                                ; display               ; work         ;
-;    |display:displayU2|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayU2                                                                               ; display               ; work         ;
-;    |display:displayU|                    ; 23 (23)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayU                                                                                ; display               ; work         ;
+;    |display34segm:displayLV_L|           ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:displayLV_L                                                                       ; display34segm         ; work         ;
+;    |display34segm:displayLV_V|           ; 135 (135)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:displayLV_V                                                                       ; display34segm         ; work         ;
+;    |display:displayD2|                   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayD2                                                                               ; display               ; work         ;
+;    |display:displayD|                    ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayD                                                                                ; display               ; work         ;
+;    |display:displayLevelNumber|          ; 20 (20)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayLevelNumber                                                                      ; display               ; work         ;
+;    |display:displayU2|                   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayU2                                                                               ; display               ; work         ;
+;    |display:displayU|                    ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayU                                                                                ; display               ; work         ;
 ;    |draw_square:bullet1_draw|            ; 44 (44)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:bullet1_draw                                                                        ; draw_square           ; work         ;
 ;    |draw_square:bullet2_draw|            ; 44 (44)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:bullet2_draw                                                                        ; draw_square           ; work         ;
-;    |draw_square:player1_draw|            ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:player1_draw                                                                        ; draw_square           ; work         ;
-;    |draw_square:player2_draw|            ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:player2_draw                                                                        ; draw_square           ; work         ;
-;    |draw_square:wall1_draw|              ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:wall1_draw                                                                          ; draw_square           ; work         ;
-;    |draw_square:wall2_draw|              ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:wall2_draw                                                                          ; draw_square           ; work         ;
+;    |draw_square:player1_draw|            ; 23 (23)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:player1_draw                                                                        ; draw_square           ; work         ;
+;    |draw_square:player2_draw|            ; 26 (26)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:player2_draw                                                                        ; draw_square           ; work         ;
+;    |draw_square:wall1_draw|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:wall1_draw                                                                          ; draw_square           ; work         ;
+;    |draw_square:wall2_draw|              ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:wall2_draw                                                                          ; draw_square           ; work         ;
 ;    |lpm_divide:Div0|                     ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|lpm_divide:Div0                                                                                 ; lpm_divide            ; work         ;
 ;       |lpm_divide_9sl:auto_generated|    ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|lpm_divide:Div0|lpm_divide_9sl:auto_generated                                                   ; lpm_divide_9sl        ; work         ;
 ;          |sign_div_unsign_bkh:divider|   ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh   ; work         ;
@@ -327,35 +333,53 @@ https://fpgasoftware.intel.com/eula.
 ;       |lpm_divide_ckl:auto_generated|    ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|lpm_divide:Mod3|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl        ; work         ;
 ;          |sign_div_unsign_bkh:divider|   ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|lpm_divide:Mod3|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh   ; work         ;
 ;             |alt_u_div_0fe:divider|      ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|lpm_divide:Mod3|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe         ; work         ;
-;    |vga_ctrl_640x480_60Hz:vga_ctrl_inst| ; 56 (53)             ; 39 (36)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst                                                             ; vga_ctrl_640x480_60Hz ; work         ;
+;    |vga_ctrl_640x480_60Hz:vga_ctrl_inst| ; 54 (51)             ; 39 (36)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst                                                             ; vga_ctrl_640x480_60Hz ; work         ;
 ;       |cntdiv_n:cntdiv_0|                ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0                                           ; cntdiv_n              ; work         ;
 +------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; player1_y[0]                          ; Stuck at GND due to stuck port data_in ;
-; bullet1_y[0]                          ; Stuck at VCC due to stuck port data_in ;
-; player2_y[0]                          ; Stuck at GND due to stuck port data_in ;
-; bullet2_y[0]                          ; Stuck at VCC due to stuck port data_in ;
-; Total Number of Removed Registers = 4 ;                                        ;
-+---------------------------------------+----------------------------------------+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; player2_x[0]                           ; Stuck at VCC due to stuck port data_in ;
+; player2_x[1]                           ; Stuck at GND due to stuck port data_in ;
+; player2_x[2]                           ; Stuck at VCC due to stuck port data_in ;
+; player2_x[3]                           ; Stuck at GND due to stuck port data_in ;
+; player2_x[4,5]                         ; Stuck at VCC due to stuck port data_in ;
+; player2_x[6..8]                        ; Stuck at GND due to stuck port data_in ;
+; player2_x[9]                           ; Stuck at VCC due to stuck port data_in ;
+; player2_x[10]                          ; Stuck at GND due to stuck port data_in ;
+; player1_x[0]                           ; Stuck at VCC due to stuck port data_in ;
+; player1_x[1,2]                         ; Stuck at GND due to stuck port data_in ;
+; player1_x[3,4]                         ; Stuck at VCC due to stuck port data_in ;
+; player1_x[5..10]                       ; Stuck at GND due to stuck port data_in ;
+; bullet_speed_divider[3]                ; Stuck at GND due to stuck port data_in ;
+; level_dis[3]                           ; Stuck at GND due to stuck port data_in ;
+; level_dis[1]                           ; Merged with bullet_speed_divider[1]    ;
+; player1_y[0]                           ; Stuck at GND due to stuck port data_in ;
+; player2_y[0]                           ; Stuck at GND due to stuck port data_in ;
+; bullet2_y[0]                           ; Stuck at VCC due to stuck port data_in ;
+; bullet1_y[0]                           ; Stuck at VCC due to stuck port data_in ;
+; bullet_speed_counter[3]                ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 30 ;                                        ;
++----------------------------------------+----------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                        ;
-+---------------+---------------------------+----------------------------------------+
-; Register name ; Reason for Removal        ; Registers Removed due to This Register ;
-+---------------+---------------------------+----------------------------------------+
-; player1_y[0]  ; Stuck at GND              ; bullet1_y[0]                           ;
-;               ; due to stuck port data_in ;                                        ;
-; player2_y[0]  ; Stuck at GND              ; bullet2_y[0]                           ;
-;               ; due to stuck port data_in ;                                        ;
-+---------------+---------------------------+----------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                  ;
++-------------------------+---------------------------+----------------------------------------+
+; Register name           ; Reason for Removal        ; Registers Removed due to This Register ;
++-------------------------+---------------------------+----------------------------------------+
+; bullet_speed_divider[3] ; Stuck at GND              ; bullet_speed_counter[3]                ;
+;                         ; due to stuck port data_in ;                                        ;
+; player1_y[0]            ; Stuck at GND              ; bullet1_y[0]                           ;
+;                         ; due to stuck port data_in ;                                        ;
+; player2_y[0]            ; Stuck at GND              ; bullet2_y[0]                           ;
+;                         ; due to stuck port data_in ;                                        ;
++-------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -363,12 +387,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 221   ;
-; Number of registers using Synchronous Clear  ; 59    ;
+; Total registers                              ; 229   ;
+; Number of registers using Synchronous Clear  ; 87    ;
 ; Number of registers using Synchronous Load   ; 37    ;
 ; Number of registers using Asynchronous Clear ; 20    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 85    ;
+; Number of registers using Clock Enable       ; 87    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -378,10 +402,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; player1_y[6]                           ; 8       ;
-; player1_y[4]                           ; 8       ;
 ; player2_y[6]                           ; 8       ;
 ; player2_y[4]                           ; 8       ;
+; player1_y[6]                           ; 8       ;
+; player1_y[4]                           ; 8       ;
 ; Total number of inverted registers = 4 ;         ;
 +----------------------------------------+---------+
 
@@ -391,19 +415,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst|hcounter[8] ;
-; 3:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |topTestVGA|Driver_Teclado:teclado1|conta_10ms[3]           ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |topTestVGA|Driver_Teclado:teclado1|conta_1ms[4]            ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |topTestVGA|score1[4]                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |topTestVGA|score2[2]                                       ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst|hcounter[6] ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|bullet1_x[9]                                    ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|bullet2_x[8]                                    ;
+; 3:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |topTestVGA|Driver_Teclado:teclado1|conta_10ms[15]          ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |topTestVGA|Driver_Teclado:teclado1|conta_1ms[0]            ;
 ; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst|vcounter[7] ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|bullet1_x[0]                                    ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|bullet2_x[3]                                    ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |topTestVGA|Driver_Teclado:teclado1|FILAS[1]                ;
-; 18:1               ; 8 bits    ; 96 LEs        ; 8 LEs                ; 88 LEs                 ; Yes        ; |topTestVGA|player1_y[9]                                    ;
-; 18:1               ; 8 bits    ; 96 LEs        ; 8 LEs                ; 88 LEs                 ; Yes        ; |topTestVGA|player2_y[7]                                    ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 2 LEs                ; 22 LEs                 ; Yes        ; |topTestVGA|player1_y[6]                                    ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 2 LEs                ; 22 LEs                 ; Yes        ; |topTestVGA|player2_y[6]                                    ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |topTestVGA|Driver_Teclado:teclado1|FILAS[3]                ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |topTestVGA|score1[5]                                       ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |topTestVGA|score2[4]                                       ;
+; 20:1               ; 8 bits    ; 104 LEs       ; 16 LEs               ; 88 LEs                 ; Yes        ; |topTestVGA|player1_y[5]                                    ;
+; 20:1               ; 8 bits    ; 104 LEs       ; 16 LEs               ; 88 LEs                 ; Yes        ; |topTestVGA|player2_y[1]                                    ;
+; 20:1               ; 2 bits    ; 26 LEs        ; 4 LEs                ; 22 LEs                 ; Yes        ; |topTestVGA|player1_y[6]                                    ;
+; 20:1               ; 2 bits    ; 26 LEs        ; 4 LEs                ; 22 LEs                 ; Yes        ; |topTestVGA|player2_y[6]                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
@@ -556,6 +580,42 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; POSX           ; 435   ; Signed Integer                        ;
 ; POSY           ; 10    ; Signed Integer                        ;
 +----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display34segm:displayLV_L ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; SG_WD          ; 3     ; Signed Integer                                ;
+; DL             ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display34segm:displayLV_V ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; SG_WD          ; 3     ; Signed Integer                                ;
+; DL             ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:displayLevelNumber ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; LW             ; 5     ; Signed Integer                                 ;
+; DW             ; 20    ; Signed Integer                                 ;
+; DL             ; 30    ; Signed Integer                                 ;
+; POSX           ; 350   ; Signed Integer                                 ;
+; POSY           ; 10    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -815,34 +875,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------+-------+----------+---------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "draw_square:player2_draw" ;
-+----------------+-------+----------+------------------+
-; Port           ; Type  ; Severity ; Details          ;
-+----------------+-------+----------+------------------+
-; x1_limit[5..4] ; Input ; Info     ; Stuck at VCC     ;
-; x1_limit[8..6] ; Input ; Info     ; Stuck at GND     ;
-; x1_limit[10]   ; Input ; Info     ; Stuck at GND     ;
-; x1_limit[9]    ; Input ; Info     ; Stuck at VCC     ;
-; x1_limit[3]    ; Input ; Info     ; Stuck at GND     ;
-; x1_limit[2]    ; Input ; Info     ; Stuck at VCC     ;
-; x1_limit[1]    ; Input ; Info     ; Stuck at GND     ;
-; x1_limit[0]    ; Input ; Info     ; Stuck at VCC     ;
-+----------------+-------+----------+------------------+
-
-
-+------------------------------------------------------+
-; Port Connectivity Checks: "draw_square:player1_draw" ;
-+-----------------+-------+----------+-----------------+
-; Port            ; Type  ; Severity ; Details         ;
-+-----------------+-------+----------+-----------------+
-; x1_limit[4..3]  ; Input ; Info     ; Stuck at VCC    ;
-; x1_limit[10..5] ; Input ; Info     ; Stuck at GND    ;
-; x1_limit[2..1]  ; Input ; Info     ; Stuck at GND    ;
-; x1_limit[0]     ; Input ; Info     ; Stuck at VCC    ;
-+-----------------+-------+----------+-----------------+
-
-
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "display34segm:display34f"                                                                                                                                                                      ;
 +------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1006,6 +1038,60 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; segments[28]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; segments[14]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; segments[0]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display34segm:displayLV_V"                                                                                                                                                                     ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port             ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; posx             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posx[5..3]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[1..0]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[10..9]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[7..6]       ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[8]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[2]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posy[10..4]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[3]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[2]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[1]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[0]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[27..25] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[19..17] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[33..28] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[24..20] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[16..10] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[8..1]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[9]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[0]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display34segm:displayLV_L"                                                                                                                                                                     ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port             ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; posx             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posx[10..9]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[7..6]       ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[4..2]       ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posx[8]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[5]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[1]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posx[0]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; posy[10..4]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[3]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[2]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; posy[1]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; posy[0]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[29..24] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; segments[33..30] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; segments[23..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 +------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1202,28 +1288,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 48                          ;
-; cycloneiii_ff         ; 221                         ;
+; cycloneiii_ff         ; 229                         ;
 ;     CLR               ; 20                          ;
-;     ENA               ; 38                          ;
-;     ENA SCLR          ; 11                          ;
-;     ENA SLD           ; 36                          ;
+;     ENA               ; 26                          ;
+;     ENA SCLR          ; 25                          ;
+;     ENA SCLR SLD      ; 14                          ;
+;     ENA SLD           ; 22                          ;
 ;     SCLR              ; 48                          ;
 ;     SLD               ; 1                           ;
-;     plain             ; 67                          ;
-; cycloneiii_lcell_comb ; 1778                        ;
-;     arith             ; 951                         ;
+;     plain             ; 73                          ;
+; cycloneiii_lcell_comb ; 2013                        ;
+;     arith             ; 1099                        ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 473                         ;
-;         3 data inputs ; 476                         ;
-;     normal            ; 827                         ;
-;         0 data inputs ; 25                          ;
-;         1 data inputs ; 59                          ;
-;         2 data inputs ; 215                         ;
-;         3 data inputs ; 106                         ;
-;         4 data inputs ; 422                         ;
+;         2 data inputs ; 581                         ;
+;         3 data inputs ; 516                         ;
+;     normal            ; 914                         ;
+;         0 data inputs ; 29                          ;
+;         1 data inputs ; 67                          ;
+;         2 data inputs ; 226                         ;
+;         3 data inputs ; 118                         ;
+;         4 data inputs ; 474                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 19.90                       ;
-; Average LUT depth     ; 9.50                        ;
+; Max LUT depth         ; 20.90                       ;
+; Average LUT depth     ; 9.38                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1232,7 +1319,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1242,7 +1329,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Jun 24 16:21:56 2025
+    Info: Processing started: Thu Jun 26 16:55:26 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P4_JUEGO -c P4_JUEGO
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1262,38 +1349,40 @@ Info (12021): Found 1 design units, including 1 entities, in source file display
     Info (12023): Found entity 1: display34segm File: C:/Users/danie/Documents/P4_JUEGO/display34segm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.sv
     Info (12023): Found entity 1: main File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at topTestVGA.sv(91): created implicit net for "CLK" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 91
-Warning (10236): Verilog HDL Implicit Net warning at topTestVGA.sv(91): created implicit net for "RST" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 91
+Warning (10236): Verilog HDL Implicit Net warning at topTestVGA.sv(102): created implicit net for "CLK" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 102
+Warning (10236): Verilog HDL Implicit Net warning at topTestVGA.sv(102): created implicit net for "RST" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 102
 Warning (10236): Verilog HDL Implicit Net warning at main.sv(33): created implicit net for "sig_pixel_x" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 33
 Warning (10236): Verilog HDL Implicit Net warning at main.sv(33): created implicit net for "sig_pixel_y" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 33
 Warning (10236): Verilog HDL Implicit Net warning at main.sv(33): created implicit net for "blanck" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 33
 Info (12127): Elaborating entity "topTestVGA" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(167): truncated value with size 32 to match size of target (11) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 167
-Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(174): truncated value with size 32 to match size of target (11) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 174
-Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(181): truncated value with size 32 to match size of target (8) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 181
-Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(182): truncated value with size 32 to match size of target (8) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 182
-Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(187): truncated value with size 32 to match size of target (8) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 187
-Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(188): truncated value with size 32 to match size of target (8) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 188
-Info (12128): Elaborating entity "vga_ctrl_640x480_60Hz" for hierarchy "vga_ctrl_640x480_60Hz:vga_ctrl_inst" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 89
+Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(209): truncated value with size 32 to match size of target (4) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 209
+Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(241): truncated value with size 32 to match size of target (11) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 241
+Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(248): truncated value with size 32 to match size of target (11) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 248
+Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(263): truncated value with size 32 to match size of target (8) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 263
+Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(264): truncated value with size 32 to match size of target (8) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 264
+Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(271): truncated value with size 32 to match size of target (8) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 271
+Warning (10230): Verilog HDL assignment warning at topTestVGA.sv(272): truncated value with size 32 to match size of target (8) File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 272
+Info (12128): Elaborating entity "vga_ctrl_640x480_60Hz" for hierarchy "vga_ctrl_640x480_60Hz:vga_ctrl_inst" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 100
 Info (12128): Elaborating entity "cntdiv_n" for hierarchy "vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0" File: C:/Users/danie/Documents/P4_JUEGO/vga_ctrl_640x480_60Hz.sv Line: 41
-Info (12128): Elaborating entity "cntdiv_n" for hierarchy "cntdiv_n:cntDiv0" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 91
-Info (12128): Elaborating entity "display" for hierarchy "display:displayU" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 94
-Info (12128): Elaborating entity "display" for hierarchy "display:displayD" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 95
-Info (12128): Elaborating entity "display34segm" for hierarchy "display34segm:display34g" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 98
-Info (12128): Elaborating entity "display" for hierarchy "display:displayU2" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 105
-Info (12128): Elaborating entity "display" for hierarchy "display:displayD2" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 106
-Info (12128): Elaborating entity "cntdiv_n" for hierarchy "cntdiv_n:clk_divisor" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 117
-Info (12128): Elaborating entity "Driver_Teclado" for hierarchy "Driver_Teclado:teclado1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 120
-Info (12128): Elaborating entity "draw_square" for hierarchy "draw_square:player1_draw" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 301
+Info (12128): Elaborating entity "cntdiv_n" for hierarchy "cntdiv_n:cntDiv0" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 102
+Info (12128): Elaborating entity "display" for hierarchy "display:displayU" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 105
+Info (12128): Elaborating entity "display" for hierarchy "display:displayD" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 106
+Info (12128): Elaborating entity "display34segm" for hierarchy "display34segm:display34g" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 109
+Info (12128): Elaborating entity "display" for hierarchy "display:displayU2" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 117
+Info (12128): Elaborating entity "display" for hierarchy "display:displayD2" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 118
+Info (12128): Elaborating entity "display" for hierarchy "display:displayLevelNumber" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 139
+Info (12128): Elaborating entity "cntdiv_n" for hierarchy "cntdiv_n:clk_divisor" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 149
+Info (12128): Elaborating entity "Driver_Teclado" for hierarchy "Driver_Teclado:teclado1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 152
+Info (12128): Elaborating entity "draw_square" for hierarchy "draw_square:player1_draw" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 391
 Info (278001): Inferred 6 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 290
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 291
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 291
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 287
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 288
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 288
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod2" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 290
-Info (12133): Instantiated megafunction "lpm_divide:Mod2" with the following parameter: File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 290
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 381
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 382
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 382
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 379
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 380
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 380
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod2" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 381
+Info (12133): Instantiated megafunction "lpm_divide:Mod2" with the following parameter: File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 381
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -1308,24 +1397,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_t3c File: C:/Users/danie/Documents/P4_JUEGO/db/add_sub_t3c.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
     Info (12023): Found entity 1: add_sub_u3c File: C:/Users/danie/Documents/P4_JUEGO/db/add_sub_u3c.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 291
-Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 291
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 382
+Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 382
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9sl.tdf
     Info (12023): Found entity 1: lpm_divide_9sl File: C:/Users/danie/Documents/P4_JUEGO/db/lpm_divide_9sl.tdf Line: 25
-Warning (12241): 12 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 14 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider|add_sub_6_result_int[0]~10" File: C:/Users/danie/Documents/P4_JUEGO/db/alt_u_div_0fe.tdf Line: 57
     Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider|add_sub_7_result_int[0]~10" File: C:/Users/danie/Documents/P4_JUEGO/db/alt_u_div_0fe.tdf Line: 62
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "sw[0]" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 7
-    Warning (15610): No output dependent on input pin "sw[1]" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 7
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "sw[2]" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 7
     Warning (15610): No output dependent on input pin "sw[3]" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 7
     Warning (15610): No output dependent on input pin "sw[4]" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 7
@@ -1334,14 +1421,14 @@ Warning (21074): Design contains 10 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "sw[7]" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 7
     Warning (15610): No output dependent on input pin "sw[8]" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 7
     Warning (15610): No output dependent on input pin "sw[9]" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 7
-Info (21057): Implemented 1870 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2104 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 31 output pins
-    Info (21061): Implemented 1822 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 4796 megabytes
-    Info: Processing ended: Tue Jun 24 16:22:06 2025
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+    Info (21061): Implemented 2056 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 4828 megabytes
+    Info: Processing ended: Thu Jun 26 16:55:37 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:22
 
 

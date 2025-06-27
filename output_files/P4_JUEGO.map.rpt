@@ -1,5 +1,5 @@
 Analysis & Synthesis report for P4_JUEGO
-Thu Jun 26 16:55:37 2025
+Fri Jun 27 16:21:00 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -42,33 +42,37 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
  34. Parameter Settings for User Entity Instance: display34segm:display34f
  35. Parameter Settings for User Entity Instance: cntdiv_n:clk_divisor
  36. Parameter Settings for User Entity Instance: Driver_Teclado:teclado1
- 37. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
- 38. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
- 39. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
- 40. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
- 41. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
- 42. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
+ 37. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 38. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 39. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
+ 40. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
+ 41. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
+ 42. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
  43. Port Connectivity Checks: "draw_square:wall2_draw"
  44. Port Connectivity Checks: "draw_square:wall1_draw"
- 45. Port Connectivity Checks: "display34segm:display34f"
- 46. Port Connectivity Checks: "display34segm:display34e"
- 47. Port Connectivity Checks: "display34segm:display34d"
- 48. Port Connectivity Checks: "display34segm:display34c"
- 49. Port Connectivity Checks: "display34segm:display34b"
- 50. Port Connectivity Checks: "display34segm:display34a"
- 51. Port Connectivity Checks: "display34segm:displayLV_V"
- 52. Port Connectivity Checks: "display34segm:displayLV_L"
- 53. Port Connectivity Checks: "display34segm:display34l"
- 54. Port Connectivity Checks: "display34segm:display34k"
- 55. Port Connectivity Checks: "display34segm:display34j"
- 56. Port Connectivity Checks: "display34segm:display34i"
- 57. Port Connectivity Checks: "display34segm:display34h"
- 58. Port Connectivity Checks: "display34segm:display34g"
- 59. Port Connectivity Checks: "cntdiv_n:cntDiv0"
- 60. Port Connectivity Checks: "vga_ctrl_640x480_60Hz:vga_ctrl_inst"
- 61. Post-Synthesis Netlist Statistics for Top Partition
- 62. Elapsed Time Per Partition
- 63. Analysis & Synthesis Messages
+ 45. Port Connectivity Checks: "image:drawIng4"
+ 46. Port Connectivity Checks: "image:drawIng3"
+ 47. Port Connectivity Checks: "image:drawIng2"
+ 48. Port Connectivity Checks: "image:drawIng1"
+ 49. Port Connectivity Checks: "display34segm:display34f"
+ 50. Port Connectivity Checks: "display34segm:display34e"
+ 51. Port Connectivity Checks: "display34segm:display34d"
+ 52. Port Connectivity Checks: "display34segm:display34c"
+ 53. Port Connectivity Checks: "display34segm:display34b"
+ 54. Port Connectivity Checks: "display34segm:display34a"
+ 55. Port Connectivity Checks: "display34segm:displayLV_V"
+ 56. Port Connectivity Checks: "display34segm:displayLV_L"
+ 57. Port Connectivity Checks: "display34segm:display34l"
+ 58. Port Connectivity Checks: "display34segm:display34k"
+ 59. Port Connectivity Checks: "display34segm:display34j"
+ 60. Port Connectivity Checks: "display34segm:display34i"
+ 61. Port Connectivity Checks: "display34segm:display34h"
+ 62. Port Connectivity Checks: "display34segm:display34g"
+ 63. Port Connectivity Checks: "cntdiv_n:cntDiv0"
+ 64. Port Connectivity Checks: "vga_ctrl_640x480_60Hz:vga_ctrl_inst"
+ 65. Post-Synthesis Netlist Statistics for Top Partition
+ 66. Elapsed Time Per Partition
+ 67. Analysis & Synthesis Messages
 
 
 
@@ -95,13 +99,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun 26 16:55:37 2025          ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 27 16:21:00 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; P4_JUEGO                                       ;
 ; Top-level Entity Name              ; topTestVGA                                     ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 2,053                                          ;
-;     Total combinational functions  ; 2,007                                          ;
+; Total logic elements               ; 2,197                                          ;
+;     Total combinational functions  ; 2,148                                          ;
 ;     Dedicated logic registers      ; 229                                            ;
 ; Total registers                    ; 229                                            ;
 ; Total pins                         ; 48                                             ;
@@ -215,33 +219,38 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.0%      ;
+;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; cntdiv_n.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/cntdiv_n.sv                                 ;         ;
-; Driver_Teclado.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/Driver_Teclado.sv                           ;         ;
-; draw_square.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/draw_square.sv                              ;         ;
-; topTestVGA.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv                               ;         ;
-; vga_ctrl_640x480_60Hz.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/vga_ctrl_640x480_60Hz.sv                    ;         ;
-; display.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/display.sv                                  ;         ;
-; display34segm.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/display34segm.sv                            ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
-; aglobal231.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc      ;         ;
-; db/lpm_divide_ckl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/lpm_divide_ckl.tdf                       ;         ;
-; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/sign_div_unsign_bkh.tdf                  ;         ;
-; db/alt_u_div_0fe.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/alt_u_div_0fe.tdf                        ;         ;
-; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/add_sub_t3c.tdf                          ;         ;
-; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/add_sub_u3c.tdf                          ;         ;
-; db/lpm_divide_9sl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/danie/Documents/P4_JUEGO/db/lpm_divide_9sl.tdf                       ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; cntdiv_n.sv                      ; yes             ; User SystemVerilog HDL File        ; C:/Users/danie/Documents/P4_JUEGO/cntdiv_n.sv                                 ;         ;
+; Driver_Teclado.sv                ; yes             ; User SystemVerilog HDL File        ; C:/Users/danie/Documents/P4_JUEGO/Driver_Teclado.sv                           ;         ;
+; draw_square.sv                   ; yes             ; User SystemVerilog HDL File        ; C:/Users/danie/Documents/P4_JUEGO/draw_square.sv                              ;         ;
+; topTestVGA.sv                    ; yes             ; User SystemVerilog HDL File        ; C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv                               ;         ;
+; vga_ctrl_640x480_60Hz.sv         ; yes             ; User SystemVerilog HDL File        ; C:/Users/danie/Documents/P4_JUEGO/vga_ctrl_640x480_60Hz.sv                    ;         ;
+; display.sv                       ; yes             ; User SystemVerilog HDL File        ; C:/Users/danie/Documents/P4_JUEGO/display.sv                                  ;         ;
+; display34segm.sv                 ; yes             ; User SystemVerilog HDL File        ; C:/Users/danie/Documents/P4_JUEGO/display34segm.sv                            ;         ;
+; image.sv                         ; yes             ; User SystemVerilog HDL File        ; C:/Users/danie/Documents/P4_JUEGO/image.sv                                    ;         ;
+; imagerom.sv                      ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/imagerom.sv                                 ;         ;
+; imagerom2.sv                     ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/imagerom2.sv                                ;         ;
+; imagerom4.sv                     ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/imagerom4.sv                                ;         ;
+; imagerom3.sv                     ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/danie/Documents/P4_JUEGO/imagerom3.sv                                ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal231.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc      ;         ;
+; db/lpm_divide_ckl.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/danie/Documents/P4_JUEGO/db/lpm_divide_ckl.tdf                       ;         ;
+; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/Users/danie/Documents/P4_JUEGO/db/sign_div_unsign_bkh.tdf                  ;         ;
+; db/alt_u_div_0fe.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/Users/danie/Documents/P4_JUEGO/db/alt_u_div_0fe.tdf                        ;         ;
+; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/Users/danie/Documents/P4_JUEGO/db/add_sub_t3c.tdf                          ;         ;
+; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/Users/danie/Documents/P4_JUEGO/db/add_sub_u3c.tdf                          ;         ;
+; db/lpm_divide_9sl.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/danie/Documents/P4_JUEGO/db/lpm_divide_9sl.tdf                       ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------+
@@ -249,17 +258,17 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------+
 ; Resource                                    ; Usage                       ;
 +---------------------------------------------+-----------------------------+
-; Estimated Total logic elements              ; 2,053                       ;
+; Estimated Total logic elements              ; 2,197                       ;
 ;                                             ;                             ;
-; Total combinational functions               ; 2007                        ;
+; Total combinational functions               ; 2148                        ;
 ; Logic element usage by number of LUT inputs ;                             ;
-;     -- 4 input functions                    ; 474                         ;
-;     -- 3 input functions                    ; 634                         ;
-;     -- <=2 input functions                  ; 899                         ;
+;     -- 4 input functions                    ; 603                         ;
+;     -- 3 input functions                    ; 682                         ;
+;     -- <=2 input functions                  ; 863                         ;
 ;                                             ;                             ;
 ; Logic elements by mode                      ;                             ;
-;     -- normal mode                          ; 908                         ;
-;     -- arithmetic mode                      ; 1099                        ;
+;     -- normal mode                          ; 1079                        ;
+;     -- arithmetic mode                      ; 1069                        ;
 ;                                             ;                             ;
 ; Total registers                             ; 229                         ;
 ;     -- Dedicated logic registers            ; 229                         ;
@@ -271,8 +280,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                             ;
 ; Maximum fan-out node                        ; cntdiv_n:clk_divisor|clkout ;
 ; Maximum fan-out                             ; 90                          ;
-; Total fan-out                               ; 6270                        ;
-; Average fan-out                             ; 2.69                        ;
+; Total fan-out                               ; 6853                        ;
+; Average fan-out                             ; 2.77                        ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -281,34 +290,38 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                         ; Entity Name           ; Library Name ;
 +------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |topTestVGA                              ; 2007 (632)          ; 229 (89)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 48   ; 0            ; 0          ; |topTestVGA                                                                                                 ; topTestVGA            ; work         ;
+; |topTestVGA                              ; 2148 (464)          ; 229 (89)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 48   ; 0            ; 0          ; |topTestVGA                                                                                                 ; topTestVGA            ; work         ;
 ;    |Driver_Teclado:teclado1|             ; 114 (114)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|Driver_Teclado:teclado1                                                                         ; Driver_Teclado        ; work         ;
 ;    |cntdiv_n:clk_divisor|                ; 28 (28)             ; 17 (17)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|cntdiv_n:clk_divisor                                                                            ; cntdiv_n              ; work         ;
 ;    |display34segm:display34a|            ; 86 (86)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34a                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34b|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34b                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34c|            ; 127 (127)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34c                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34d|            ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34d                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34b|            ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34b                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34c|            ; 124 (124)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34c                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34d|            ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34d                                                                        ; display34segm         ; work         ;
 ;    |display34segm:display34e|            ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34e                                                                        ; display34segm         ; work         ;
 ;    |display34segm:display34f|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34f                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34g|            ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34g                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34h|            ; 78 (78)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34h                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34i|            ; 109 (109)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34i                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34j|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34j                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34k|            ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34k                                                                        ; display34segm         ; work         ;
-;    |display34segm:display34l|            ; 87 (87)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34l                                                                        ; display34segm         ; work         ;
-;    |display34segm:displayLV_L|           ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:displayLV_L                                                                       ; display34segm         ; work         ;
-;    |display34segm:displayLV_V|           ; 135 (135)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:displayLV_V                                                                       ; display34segm         ; work         ;
-;    |display:displayD2|                   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayD2                                                                               ; display               ; work         ;
-;    |display:displayD|                    ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayD                                                                                ; display               ; work         ;
-;    |display:displayLevelNumber|          ; 20 (20)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayLevelNumber                                                                      ; display               ; work         ;
-;    |display:displayU2|                   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayU2                                                                               ; display               ; work         ;
-;    |display:displayU|                    ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayU                                                                                ; display               ; work         ;
-;    |draw_square:bullet1_draw|            ; 44 (44)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:bullet1_draw                                                                        ; draw_square           ; work         ;
-;    |draw_square:bullet2_draw|            ; 44 (44)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:bullet2_draw                                                                        ; draw_square           ; work         ;
-;    |draw_square:player1_draw|            ; 23 (23)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:player1_draw                                                                        ; draw_square           ; work         ;
-;    |draw_square:player2_draw|            ; 26 (26)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:player2_draw                                                                        ; draw_square           ; work         ;
-;    |draw_square:wall1_draw|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:wall1_draw                                                                          ; draw_square           ; work         ;
-;    |draw_square:wall2_draw|              ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:wall2_draw                                                                          ; draw_square           ; work         ;
+;    |display34segm:display34g|            ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34g                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34h|            ; 87 (87)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34h                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34i|            ; 119 (119)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34i                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34j|            ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34j                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34k|            ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34k                                                                        ; display34segm         ; work         ;
+;    |display34segm:display34l|            ; 91 (91)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:display34l                                                                        ; display34segm         ; work         ;
+;    |display34segm:displayLV_L|           ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:displayLV_L                                                                       ; display34segm         ; work         ;
+;    |display34segm:displayLV_V|           ; 127 (127)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display34segm:displayLV_V                                                                       ; display34segm         ; work         ;
+;    |display:displayD2|                   ; 36 (36)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayD2                                                                               ; display               ; work         ;
+;    |display:displayD|                    ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayD                                                                                ; display               ; work         ;
+;    |display:displayLevelNumber|          ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayLevelNumber                                                                      ; display               ; work         ;
+;    |display:displayU2|                   ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayU2                                                                               ; display               ; work         ;
+;    |display:displayU|                    ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|display:displayU                                                                                ; display               ; work         ;
+;    |draw_square:wall1_draw|              ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:wall1_draw                                                                          ; draw_square           ; work         ;
+;    |draw_square:wall2_draw|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|draw_square:wall2_draw                                                                          ; draw_square           ; work         ;
+;    |image:drawIng1|                      ; 103 (70)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|image:drawIng1                                                                                  ; image                 ; work         ;
+;       |imageROM:img1|                    ; 33 (33)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|image:drawIng1|imageROM:img1                                                                    ; imageROM              ; work         ;
+;    |image:drawIng2|                      ; 99 (80)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|image:drawIng2                                                                                  ; image                 ; work         ;
+;       |imageROM2:img2|                   ; 19 (19)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|image:drawIng2|imageROM2:img2                                                                   ; imageROM2             ; work         ;
+;    |image:drawIng3|                      ; 77 (70)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|image:drawIng3                                                                                  ; image                 ; work         ;
+;       |imageROM4:img3|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|image:drawIng3|imageROM4:img3                                                                   ; imageROM4             ; work         ;
+;    |image:drawIng4|                      ; 77 (70)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|image:drawIng4                                                                                  ; image                 ; work         ;
+;       |imageROM3:img4|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|image:drawIng4|imageROM3:img4                                                                   ; imageROM3             ; work         ;
 ;    |lpm_divide:Div0|                     ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|lpm_divide:Div0                                                                                 ; lpm_divide            ; work         ;
 ;       |lpm_divide_9sl:auto_generated|    ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|lpm_divide:Div0|lpm_divide_9sl:auto_generated                                                   ; lpm_divide_9sl        ; work         ;
 ;          |sign_div_unsign_bkh:divider|   ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh   ; work         ;
@@ -333,7 +346,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |lpm_divide_ckl:auto_generated|    ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|lpm_divide:Mod3|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl        ; work         ;
 ;          |sign_div_unsign_bkh:divider|   ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|lpm_divide:Mod3|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh   ; work         ;
 ;             |alt_u_div_0fe:divider|      ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|lpm_divide:Mod3|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe         ; work         ;
-;    |vga_ctrl_640x480_60Hz:vga_ctrl_inst| ; 54 (51)             ; 39 (36)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst                                                             ; vga_ctrl_640x480_60Hz ; work         ;
+;    |vga_ctrl_640x480_60Hz:vga_ctrl_inst| ; 85 (82)             ; 39 (36)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst                                                             ; vga_ctrl_640x480_60Hz ; work         ;
 ;       |cntdiv_n:cntdiv_0|                ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst|cntdiv_n:cntdiv_0                                           ; cntdiv_n              ; work         ;
 +------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -345,11 +358,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
 ; player2_x[0]                           ; Stuck at VCC due to stuck port data_in ;
-; player2_x[1]                           ; Stuck at GND due to stuck port data_in ;
-; player2_x[2]                           ; Stuck at VCC due to stuck port data_in ;
-; player2_x[3]                           ; Stuck at GND due to stuck port data_in ;
-; player2_x[4,5]                         ; Stuck at VCC due to stuck port data_in ;
-; player2_x[6..8]                        ; Stuck at GND due to stuck port data_in ;
+; player2_x[1,2]                         ; Stuck at GND due to stuck port data_in ;
+; player2_x[3]                           ; Stuck at VCC due to stuck port data_in ;
+; player2_x[4,5]                         ; Stuck at GND due to stuck port data_in ;
+; player2_x[6]                           ; Stuck at VCC due to stuck port data_in ;
+; player2_x[7,8]                         ; Stuck at GND due to stuck port data_in ;
 ; player2_x[9]                           ; Stuck at VCC due to stuck port data_in ;
 ; player2_x[10]                          ; Stuck at GND due to stuck port data_in ;
 ; player1_x[0]                           ; Stuck at VCC due to stuck port data_in ;
@@ -361,8 +374,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; level_dis[1]                           ; Merged with bullet_speed_divider[1]    ;
 ; player1_y[0]                           ; Stuck at GND due to stuck port data_in ;
 ; player2_y[0]                           ; Stuck at GND due to stuck port data_in ;
-; bullet2_y[0]                           ; Stuck at VCC due to stuck port data_in ;
-; bullet1_y[0]                           ; Stuck at VCC due to stuck port data_in ;
+; bullet2_y[0]                           ; Stuck at GND due to stuck port data_in ;
+; bullet1_y[0]                           ; Stuck at GND due to stuck port data_in ;
 ; bullet_speed_counter[3]                ; Stuck at GND due to stuck port data_in ;
 ; Total Number of Removed Registers = 30 ;                                        ;
 +----------------------------------------+----------------------------------------+
@@ -402,10 +415,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; player2_y[6]                           ; 8       ;
-; player2_y[4]                           ; 8       ;
 ; player1_y[6]                           ; 8       ;
-; player1_y[4]                           ; 8       ;
+; player1_y[4]                           ; 10      ;
+; player2_y[6]                           ; 8       ;
+; player2_y[4]                           ; 10      ;
 ; Total number of inverted registers = 4 ;         ;
 +----------------------------------------+---------+
 
@@ -415,19 +428,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst|hcounter[6] ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|bullet1_x[9]                                    ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|bullet2_x[8]                                    ;
-; 3:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |topTestVGA|Driver_Teclado:teclado1|conta_10ms[15]          ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |topTestVGA|Driver_Teclado:teclado1|conta_1ms[0]            ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst|vcounter[7] ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |topTestVGA|Driver_Teclado:teclado1|FILAS[3]                ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |topTestVGA|score1[5]                                       ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |topTestVGA|score2[4]                                       ;
-; 20:1               ; 8 bits    ; 104 LEs       ; 16 LEs               ; 88 LEs                 ; Yes        ; |topTestVGA|player1_y[5]                                    ;
-; 20:1               ; 8 bits    ; 104 LEs       ; 16 LEs               ; 88 LEs                 ; Yes        ; |topTestVGA|player2_y[1]                                    ;
-; 20:1               ; 2 bits    ; 26 LEs        ; 4 LEs                ; 22 LEs                 ; Yes        ; |topTestVGA|player1_y[6]                                    ;
-; 20:1               ; 2 bits    ; 26 LEs        ; 4 LEs                ; 22 LEs                 ; Yes        ; |topTestVGA|player2_y[6]                                    ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst|hcounter[9] ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|bullet1_x[6]                                    ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|bullet2_x[0]                                    ;
+; 3:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |topTestVGA|Driver_Teclado:teclado1|conta_10ms[5]           ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |topTestVGA|Driver_Teclado:teclado1|conta_1ms[3]            ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst|vcounter[4] ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |topTestVGA|Driver_Teclado:teclado1|FILAS[2]                ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |topTestVGA|score1[3]                                       ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |topTestVGA|score2[3]                                       ;
+; 20:1               ; 8 bits    ; 104 LEs       ; 16 LEs               ; 88 LEs                 ; Yes        ; |topTestVGA|player1_y[7]                                    ;
+; 20:1               ; 8 bits    ; 104 LEs       ; 16 LEs               ; 88 LEs                 ; Yes        ; |topTestVGA|player2_y[10]                                   ;
+; 20:1               ; 2 bits    ; 26 LEs        ; 4 LEs                ; 22 LEs                 ; Yes        ; |topTestVGA|player1_y[4]                                    ;
+; 20:1               ; 2 bits    ; 26 LEs        ; 4 LEs                ; 22 LEs                 ; Yes        ; |topTestVGA|player2_y[4]                                    ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |topTestVGA|rgb_color                                       ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst|rgb_out     ;
+; 22:1               ; 3 bits    ; 42 LEs        ; 33 LEs               ; 9 LEs                  ; No         ; |topTestVGA|vga_ctrl_640x480_60Hz:vga_ctrl_inst|rgb_out     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
@@ -706,75 +722,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 8              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_ckl ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Div1 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 8              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_9sl ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 8              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_ckl ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
 +------------------------+----------------+------------------------+
 ; Parameter Name         ; Value          ; Type                   ;
@@ -843,17 +790,87 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div1 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_9sl ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_ckl ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_ckl ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------+
 ; Port Connectivity Checks: "draw_square:wall2_draw" ;
 +-----------------+-------+----------+---------------+
 ; Port            ; Type  ; Severity ; Details       ;
 +-----------------+-------+----------+---------------+
 ; x1_limit[6..4]  ; Input ; Info     ; Stuck at VCC  ;
+; x1_limit[2..1]  ; Input ; Info     ; Stuck at VCC  ;
 ; x1_limit[8..7]  ; Input ; Info     ; Stuck at GND  ;
-; x1_limit[3..1]  ; Input ; Info     ; Stuck at GND  ;
 ; x1_limit[10]    ; Input ; Info     ; Stuck at GND  ;
 ; x1_limit[9]     ; Input ; Info     ; Stuck at VCC  ;
-; x1_limit[0]     ; Input ; Info     ; Stuck at VCC  ;
+; x1_limit[3]     ; Input ; Info     ; Stuck at GND  ;
+; x1_limit[0]     ; Input ; Info     ; Stuck at GND  ;
 ; y1_limit[5..2]  ; Input ; Info     ; Stuck at VCC  ;
 ; y1_limit[10..6] ; Input ; Info     ; Stuck at GND  ;
 ; y1_limit[1..0]  ; Input ; Info     ; Stuck at GND  ;
@@ -873,6 +890,44 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; y1_limit[10..6] ; Input ; Info     ; Stuck at GND  ;
 ; y1_limit[1..0]  ; Input ; Info     ; Stuck at GND  ;
 +-----------------+-------+----------+---------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "image:drawIng4" ;
++------+-------+----------+------------------+
+; Port ; Type  ; Severity ; Details          ;
++------+-------+----------+------------------+
+; per  ; Input ; Info     ; Stuck at VCC     ;
++------+-------+----------+------------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "image:drawIng3" ;
++--------+-------+----------+----------------+
+; Port   ; Type  ; Severity ; Details        ;
++--------+-------+----------+----------------+
+; per[1] ; Input ; Info     ; Stuck at VCC   ;
+; per[0] ; Input ; Info     ; Stuck at GND   ;
++--------+-------+----------+----------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "image:drawIng2" ;
++--------+-------+----------+----------------+
+; Port   ; Type  ; Severity ; Details        ;
++--------+-------+----------+----------------+
+; per[1] ; Input ; Info     ; Stuck at GND   ;
+; per[0] ; Input ; Info     ; Stuck at VCC   ;
++--------+-------+----------+----------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "image:drawIng1" ;
++------+-------+----------+------------------+
+; Port ; Type  ; Severity ; Details          ;
++------+-------+----------+------------------+
+; per  ; Input ; Info     ; Stuck at GND     ;
++------+-------+----------+------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1297,20 +1352,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SCLR              ; 48                          ;
 ;     SLD               ; 1                           ;
 ;     plain             ; 73                          ;
-; cycloneiii_lcell_comb ; 2013                        ;
-;     arith             ; 1099                        ;
+; cycloneiii_lcell_comb ; 2154                        ;
+;     arith             ; 1069                        ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 581                         ;
-;         3 data inputs ; 516                         ;
-;     normal            ; 914                         ;
-;         0 data inputs ; 29                          ;
-;         1 data inputs ; 67                          ;
-;         2 data inputs ; 226                         ;
-;         3 data inputs ; 118                         ;
-;         4 data inputs ; 474                         ;
+;         2 data inputs ; 525                         ;
+;         3 data inputs ; 542                         ;
+;     normal            ; 1085                        ;
+;         0 data inputs ; 35                          ;
+;         1 data inputs ; 61                          ;
+;         2 data inputs ; 246                         ;
+;         3 data inputs ; 140                         ;
+;         4 data inputs ; 603                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 20.90                       ;
-; Average LUT depth     ; 9.38                        ;
+; Average LUT depth     ; 10.39                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1329,7 +1384,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Jun 26 16:55:26 2025
+    Info: Processing started: Fri Jun 27 16:20:48 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P4_JUEGO -c P4_JUEGO
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1349,6 +1404,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file display
     Info (12023): Found entity 1: display34segm File: C:/Users/danie/Documents/P4_JUEGO/display34segm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.sv
     Info (12023): Found entity 1: main File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file image.sv
+    Info (12023): Found entity 1: image File: C:/Users/danie/Documents/P4_JUEGO/image.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at topTestVGA.sv(102): created implicit net for "CLK" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 102
 Warning (10236): Verilog HDL Implicit Net warning at topTestVGA.sv(102): created implicit net for "RST" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 102
 Warning (10236): Verilog HDL Implicit Net warning at main.sv(33): created implicit net for "sig_pixel_x" File: C:/Users/danie/Documents/P4_JUEGO/main.sv Line: 33
@@ -1373,16 +1430,51 @@ Info (12128): Elaborating entity "display" for hierarchy "display:displayD2" Fil
 Info (12128): Elaborating entity "display" for hierarchy "display:displayLevelNumber" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 139
 Info (12128): Elaborating entity "cntdiv_n" for hierarchy "cntdiv_n:clk_divisor" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 149
 Info (12128): Elaborating entity "Driver_Teclado" for hierarchy "Driver_Teclado:teclado1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 152
-Info (12128): Elaborating entity "draw_square" for hierarchy "draw_square:player1_draw" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 391
+Info (12128): Elaborating entity "image" for hierarchy "image:drawIng1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 430
+Warning (12125): Using design file imagerom.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: imageROM File: C:/Users/danie/Documents/P4_JUEGO/imagerom.sv Line: 1
+Info (12128): Elaborating entity "imageROM" for hierarchy "image:drawIng1|imageROM:img1" File: C:/Users/danie/Documents/P4_JUEGO/image.sv Line: 25
+Warning (10030): Net "rom.data_a" at imagerom.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Documents/P4_JUEGO/imagerom.sv Line: 7
+Warning (10030): Net "rom.waddr_a" at imagerom.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Documents/P4_JUEGO/imagerom.sv Line: 7
+Warning (10030): Net "rom.we_a" at imagerom.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Documents/P4_JUEGO/imagerom.sv Line: 7
+Warning (12125): Using design file imagerom2.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: imageROM2 File: C:/Users/danie/Documents/P4_JUEGO/imagerom2.sv Line: 1
+Info (12128): Elaborating entity "imageROM2" for hierarchy "image:drawIng1|imageROM2:img2" File: C:/Users/danie/Documents/P4_JUEGO/image.sv Line: 27
+Warning (10030): Net "rom.data_a" at imagerom2.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Documents/P4_JUEGO/imagerom2.sv Line: 7
+Warning (10030): Net "rom.waddr_a" at imagerom2.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Documents/P4_JUEGO/imagerom2.sv Line: 7
+Warning (10030): Net "rom.we_a" at imagerom2.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Documents/P4_JUEGO/imagerom2.sv Line: 7
+Warning (12125): Using design file imagerom4.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: imageROM4 File: C:/Users/danie/Documents/P4_JUEGO/imagerom4.sv Line: 1
+Info (12128): Elaborating entity "imageROM4" for hierarchy "image:drawIng1|imageROM4:img3" File: C:/Users/danie/Documents/P4_JUEGO/image.sv Line: 29
+Warning (10030): Net "rom.data_a" at imagerom4.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Documents/P4_JUEGO/imagerom4.sv Line: 7
+Warning (10030): Net "rom.waddr_a" at imagerom4.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Documents/P4_JUEGO/imagerom4.sv Line: 7
+Warning (10030): Net "rom.we_a" at imagerom4.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Documents/P4_JUEGO/imagerom4.sv Line: 7
+Warning (12125): Using design file imagerom3.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: imageROM3 File: C:/Users/danie/Documents/P4_JUEGO/imagerom3.sv Line: 1
+Info (12128): Elaborating entity "imageROM3" for hierarchy "image:drawIng1|imageROM3:img4" File: C:/Users/danie/Documents/P4_JUEGO/image.sv Line: 31
+Warning (10030): Net "rom.data_a" at imagerom3.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Documents/P4_JUEGO/imagerom3.sv Line: 7
+Warning (10030): Net "rom.waddr_a" at imagerom3.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Documents/P4_JUEGO/imagerom3.sv Line: 7
+Warning (10030): Net "rom.we_a" at imagerom3.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Documents/P4_JUEGO/imagerom3.sv Line: 7
+Info (12128): Elaborating entity "draw_square" for hierarchy "draw_square:wall1_draw" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 465
+Critical Warning (127005): Memory depth (64) in the design file differs from memory depth (51) in the Memory Initialization File "C:/Users/danie/Documents/P4_JUEGO/db/P4_JUEGO.ram0_imageROM4_4a222bd5.hdl.mif" -- setting initial value for remaining addresses to 0
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/danie/Documents/P4_JUEGO/db/P4_JUEGO.ram0_imageROM4_4a222bd5.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/danie/Documents/P4_JUEGO/db/P4_JUEGO.ram0_imageROM3_4a222bd2.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (276014): Found 4 instances of uninferred RAM logic
+    Info (276013): RAM logic "image:drawIng1|imageROM:img1|rom" is uninferred because MIF is not supported for the selected family File: C:/Users/danie/Documents/P4_JUEGO/imagerom.sv Line: 7
+    Info (276013): RAM logic "image:drawIng2|imageROM2:img2|rom" is uninferred because MIF is not supported for the selected family File: C:/Users/danie/Documents/P4_JUEGO/imagerom2.sv Line: 7
+    Info (276013): RAM logic "image:drawIng3|imageROM4:img3|rom" is uninferred because MIF is not supported for the selected family File: C:/Users/danie/Documents/P4_JUEGO/imagerom4.sv Line: 7
+    Info (276013): RAM logic "image:drawIng4|imageROM3:img4|rom" is uninferred because MIF is not supported for the selected family File: C:/Users/danie/Documents/P4_JUEGO/imagerom3.sv Line: 7
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/danie/Documents/P4_JUEGO/db/P4_JUEGO.ram0_imageROM4_4a222bd5.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/danie/Documents/P4_JUEGO/db/P4_JUEGO.ram0_imageROM3_4a222bd2.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Info (278001): Inferred 6 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 381
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 382
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 382
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 379
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 380
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 380
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod2" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 381
-Info (12133): Instantiated megafunction "lpm_divide:Mod2" with the following parameter: File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 381
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 385
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 386
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 386
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 388
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 388
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 387
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 385
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 385
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -1397,8 +1489,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_t3c File: C:/Users/danie/Documents/P4_JUEGO/db/add_sub_t3c.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
     Info (12023): Found entity 1: add_sub_u3c File: C:/Users/danie/Documents/P4_JUEGO/db/add_sub_u3c.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 382
-Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 382
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 386
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 386
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -1421,14 +1513,14 @@ Warning (21074): Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "sw[7]" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 7
     Warning (15610): No output dependent on input pin "sw[8]" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 7
     Warning (15610): No output dependent on input pin "sw[9]" File: C:/Users/danie/Documents/P4_JUEGO/topTestVGA.sv Line: 7
-Info (21057): Implemented 2104 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2250 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 31 output pins
-    Info (21061): Implemented 2056 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info (21061): Implemented 2202 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 44 warnings
     Info: Peak virtual memory: 4828 megabytes
-    Info: Processing ended: Thu Jun 26 16:55:37 2025
-    Info: Elapsed time: 00:00:11
+    Info: Processing ended: Fri Jun 27 16:21:00 2025
+    Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:22
 
 

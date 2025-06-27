@@ -29,7 +29,7 @@ module topTestVGA #(FPGAFREQ = 50_000_000) (
 
    // JUGADOR 1 (original - teclas 5, 0, A)
    logic [10:0] player1_x = 11'd25, player1_y = 11'd80;
-   logic [10:0] player1_w = 11'd50, player1_h = 11'd50;
+   logic [10:0] player1_w = 11'd32, player1_h = 11'd32;
    logic        paint_player1;
 	 
 	// MURO JUGADOR 1
@@ -38,12 +38,12 @@ module topTestVGA #(FPGAFREQ = 50_000_000) (
    logic paint_wall1;
 	 
 	// MURO JUGADOR 2
-	logic [10:0] wall2_x = 11'd625;
+	logic [10:0] wall2_x = 11'd630;
    logic paint_wall2;
 	 
 	// JUGADOR 2 (nuevo - teclas 3, 9, B)
-   logic [10:0] player2_x = 11'd565, player2_y = 11'd80;  // Lado derecho
-   logic [10:0] player2_w = 11'd50,  player2_h = 11'd50;
+   logic [10:0] player2_x = 11'd585, player2_y = 11'd80;  // Lado derecho
+   logic [10:0] player2_w = 11'd32,  player2_h = 11'd32;
    logic        paint_player2;
 
    // BALA JUGADOR 1
@@ -51,7 +51,7 @@ module topTestVGA #(FPGAFREQ = 50_000_000) (
    logic [10:0] bullet1_y;
    logic        bullet1_active;
    logic        paint_bullet1;
-   logic [10:0] bullet_w = 11'd5;
+   logic [10:0] bullet_w = 11'd24;
    logic [10:0] bullet_h = 11'd5;
 
    // BALA JUGADOR 2
@@ -198,7 +198,7 @@ module topTestVGA #(FPGAFREQ = 50_000_000) (
 		  if (reset_tv) begin
 				player1_x <= 11'd25; 
 				player1_y <= 11'd80;
-				player2_x <= 11'd565;
+				player2_x <= 11'd585;
 				player2_y <= 11'd80;
 		  end
     end
@@ -320,60 +320,66 @@ module topTestVGA #(FPGAFREQ = 50_000_000) (
 			end
     end
 	 
-    // Salida de color
-    always_comb begin
-        rgb_color = 12'h000;  // Fondo negro
-        
-		if (PAINTD) rgb_color = 12'h00F;
-		else if (PAINTU)rgb_color = 12'h00F; //azul
-		
-		if (PAINT_1)rgb_color = 12'h8F0;
-		else if (PAINT_2)rgb_color = 12'h8F0;
-		else if (PAINT_3)rgb_color = 12'h8F0;
-		else if (PAINT_4)rgb_color = 12'h8F0;
-		else if (PAINT_5)rgb_color = 12'h8F0;
-		else if (PAINT_6)rgb_color = 12'h8F0;
-		else if (PAINTC3)rgb_color = 12'h8F0;
-		else if (PAINT_LV_L)rgb_color = 12'h8F0;
-		else if (PAINT_LV_V)rgb_color = 12'h8F0;
-		
-		
-		if (PAINTD2)rgb_color = 12'h00F;
-		else if (PAINTU2)rgb_color = 12'h00F; //azul
-		
-		if (PAINT34SEG)rgb_color = 12'h8F0;
-		else if (PAINT_7)rgb_color = 12'h8F0;
-		else if (PAINT_8)rgb_color = 12'h8F0;
-		else if (PAINT_9)rgb_color = 12'h8F0;
-		else if (PAINT_10)rgb_color = 12'h8F0;
-		else if (PAINT_11)rgb_color = 12'h8F0; 
-		
-		  
-		  // Muro 1 - Color azul
-        if (paint_wall1) 
-            rgb_color = 12'h00F;
-        
-		  // Muro 2 - Color verde
-        if (paint_wall2) 
-            rgb_color = 12'h0F0;
-        
-        // Jugador 1 - Color azul
-        if (paint_player1) 
-            rgb_color = 12'h00F;
-        
-        // Jugador 2 - Color verde
-        if (paint_player2) 
-            rgb_color = 12'h0F0;
-        
-        // Bala jugador 1 - Color rojo
-        if (paint_bullet1 && bullet1_active) 
-            rgb_color = 12'hF00;
-        
-        // Bala jugador 2 - Color amarillo
-        if (paint_bullet2 && bullet2_active) 
-            rgb_color = 12'hFF0;
-    end
-	
+   // CONVERSIÓN DE COLORES DE 24-BIT A 12-BIT
+// Formato: 12'hRGB donde cada canal tiene 4 bits (0-F)
+
+// Salida de color CORREGIDA
+always_comb begin
+    rgb_color = 12'h000;  // Fondo negro
+     
+    // Puntajes Jugador 1 - Color BLANCO (era negro 12'h000)
+    if (PAINTD) rgb_color = 12'hFFF;        // Blanco
+    else if (PAINTU) rgb_color = 12'hFFF;   // Blanco
+    
+    // Nombre del jugador 2 - Color Verde
+    // Original: 12'ha9ff53 -> Convertido: 12'hAF5
+    if (PAINT_1) rgb_color = 12'hAF5;
+    else if (PAINT_2) rgb_color = 12'hAF5;
+    else if (PAINT_3) rgb_color = 12'hAF5;
+    else if (PAINT_4) rgb_color = 12'hAF5;
+    else if (PAINT_5) rgb_color = 12'hAF5;
+    else if (PAINT_6) rgb_color = 12'hAF5;
+    else if (PAINTC3) rgb_color = 12'hA5F;
+    else if (PAINT_LV_L) rgb_color = 12'hA5F;
+    else if (PAINT_LV_V) rgb_color = 12'hA5F;
+    
+    // Puntajes jugador 2 - Color BLANCO (era negro 12'h000)
+    if (PAINTD2) rgb_color = 12'hFFF;       // Blanco
+    else if (PAINTU2) rgb_color = 12'hFFF;  // Blanco
+    
+    // Nombre del jugador 1 - Color Rojo
+    // Original: 12'hff5353 -> Convertido: 12'hF55
+    if (PAINT34SEG) rgb_color = 12'hF55;
+    else if (PAINT_7) rgb_color = 12'hF55;
+    else if (PAINT_8) rgb_color = 12'hF55;
+    else if (PAINT_9) rgb_color = 12'hF55;
+    else if (PAINT_10) rgb_color = 12'hF55;
+    else if (PAINT_11) rgb_color = 12'hF55; 
+    
+    // Muro 1 - Color cian
+    // Original: 12'h53ffff -> Convertido: 12'h5FF
+    if (paint_wall1) rgb_color = 12'h5FF;
+      
+    // Muro 2 - Color cian
+    // Original: 12'h53ffff -> Convertido: 12'h5FF
+    if (paint_wall2) rgb_color = 12'h5FF;
+      
+    // Jugador 1 - Color rojo
+    // Original: 12'hff5353 -> Convertido: 12'hF55
+    if (paint_player1) rgb_color = 12'hF55;
+    
+    // Jugador 2 - Color verde
+    // Original: 12'ha9ff53 -> Convertido: 12'hAF5
+    if (paint_player2) rgb_color = 12'hAF5;
+      
+    // Bala jugador 1 - Color rojo
+    // Original: 12'hff5353 -> Convertido: 12'hF55
+    if (paint_bullet1 && bullet1_active) rgb_color = 12'hF55;
+    
+    // Bala jugador 2 - Color verde
+    // Original: 12'ha9ff53 -> Convertido: 12'hAF5
+    if (paint_bullet2 && bullet2_active) rgb_color = 12'hAF5;
+end
 	
 	always_comb begin
 			units_1 = 4'(score1 % 10'd10);
@@ -382,38 +388,73 @@ module topTestVGA #(FPGAFREQ = 50_000_000) (
 			tens_2  = 4'((score2 / 10'd10)%10'd10);
 	end
 		
-    // Dibujar jugador 1
-    draw_square player1_draw (
-        .pix_x(sig_pixel_x), .pix_y(sig_pixel_y),
-        .x1_limit(player1_x), .x2_limit(player1_x + player1_w),
-        .y1_limit(player1_y), .y2_limit(player1_y + player1_h),
-        .PAINT(paint_player1)
+//    // Dibujar jugador 1
+//    draw_square player1_draw (
+//        .pix_x(sig_pixel_x), .pix_y(sig_pixel_y),
+//        .x1_limit(player1_x), .x2_limit(player1_x + player1_w),
+//        .y1_limit(player1_y), .y2_limit(player1_y + player1_h),
+//        .PAINT(paint_player1)
+//    );
+//
+//    // Dibujar jugador 2
+//    draw_square player2_draw (
+//        .pix_x(sig_pixel_x), .pix_y(sig_pixel_y),
+//        .x1_limit(player2_x), .x2_limit(player2_x + player2_w),
+//        .y1_limit(player2_y), .y2_limit(player2_y + player2_h),
+//        .PAINT(paint_player2)
+//    );
+//
+//    // Dibujar bala jugador 1
+//    draw_square bullet1_draw (
+//        .pix_x(sig_pixel_x), .pix_y(sig_pixel_y),
+//        .x1_limit(bullet1_x), .x2_limit(bullet1_x + bullet_w),
+//        .y1_limit(bullet1_y), .y2_limit(bullet1_y + bullet_h),
+//        .PAINT(paint_bullet1)
+//    );
+//
+//    // Dibujar bala jugador 2
+//    draw_square bullet2_draw (
+//        .pix_x(sig_pixel_x), .pix_y(sig_pixel_y),
+//        .x1_limit(bullet2_x), .x2_limit(bullet2_x + bullet_w),
+//        .y1_limit(bullet2_y), .y2_limit(bullet2_y + bullet_h),
+//        .PAINT(paint_bullet2)
+//    );
+	 
+	 		// PERSONAJE 1
+		image drawIng1 (.per(2'd0),
+        .POSX(player1_x),
+        .POSY(player1_y),
+        .pix_x(sig_pixel_x),
+        .pix_y(sig_pixel_y),
+        .paint(paint_player1)
     );
 
-    // Dibujar jugador 2
-    draw_square player2_draw (
-        .pix_x(sig_pixel_x), .pix_y(sig_pixel_y),
-        .x1_limit(player2_x), .x2_limit(player2_x + player2_w),
-        .y1_limit(player2_y), .y2_limit(player2_y + player2_h),
-        .PAINT(paint_player2)
-    );
-
-    // Dibujar bala jugador 1
-    draw_square bullet1_draw (
-        .pix_x(sig_pixel_x), .pix_y(sig_pixel_y),
-        .x1_limit(bullet1_x), .x2_limit(bullet1_x + bullet_w),
-        .y1_limit(bullet1_y), .y2_limit(bullet1_y + bullet_h),
-        .PAINT(paint_bullet1)
-    );
-
-    // Dibujar bala jugador 2
-    draw_square bullet2_draw (
-        .pix_x(sig_pixel_x), .pix_y(sig_pixel_y),
-        .x1_limit(bullet2_x), .x2_limit(bullet2_x + bullet_w),
-        .y1_limit(bullet2_y), .y2_limit(bullet2_y + bullet_h),
-        .PAINT(paint_bullet2)
+	 // PERSONAJE 2
+	 image drawIng2 (.per(2'd1),
+        .POSX(player2_x),
+        .POSY(player2_y),
+        .pix_x(sig_pixel_x),
+        .pix_y(sig_pixel_y),
+        .paint(paint_player2)
     );
 	 
+	 // BALA 1
+	 image drawIng3 (.per(2'd2),
+        .POSX(bullet1_x),
+        .POSY(bullet1_y),
+        .pix_x(sig_pixel_x),
+        .pix_y(sig_pixel_y),
+        .paint(paint_bullet1)
+    );
+	 
+	 // BALA 2
+	 image drawIng4 (.per(2'd3),
+        .POSX(bullet2_x),
+        .POSY(bullet2_y),
+        .pix_x(sig_pixel_x),
+        .pix_y(sig_pixel_y),
+        .paint(paint_bullet2)
+    );
 	 
     // Dibujar muro jugador 1
     draw_square wall1_draw (
